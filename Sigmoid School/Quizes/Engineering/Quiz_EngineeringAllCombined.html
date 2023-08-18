@@ -18,11 +18,11 @@
                 <div class="row landingSection">
                     <div class="col-lg-8 col-md-7 col-sm-12">
                         <div class="card bg-transparent border-0 m-0">
-                            <div class="card-body">
-                                <h1 class="pt-1 m-0" style="color: rgb(10, 9, 89);">
+                            <div class="card-body p-0">
+                                <h2 id="courseTitle" class="pt-1 m-0">
                                     {{TITLE}}
-                                </h1>
-                                <h3 class="pt-1 m-0" style="font-size: 18px; font-weight: 400; color: rgb(4, 4, 19);">
+                                </h2>
+                                <h3 id="courseDetails" class="pt-1 m-0" style="font-size: 16px;">
                                     {{DESCRIPTION}}
                                 </h3>
                             </div>
@@ -30,14 +30,15 @@
 
                         <div class="card bg-transparent border-0 m-0">
                             <div class="card-body p-0">
+
                                 <div class="row gy-2">
-                                    <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <div class="col-lg-6 col-sm-6">
                                         <div class="card" style=" border-radius: 10px;
                                         background-color: #fcfbfb;">
-                                            <div class="card-body p-0" style="text-align: center;">
+                                            <div class="card-body p-0 d-lg-flex justify-content-lg-evenly" style="text-align: center;">
                                                 <img src="https://res.cloudinary.com/pioneer-alpha/image/upload/v1692074398/Sigmoid%20School%28Website%29/quiz_tythns.png"
-                                                    alt="topicImage" height="60px" width="60px" style="margin: 0rem;">
-                                                <h6 class="pt-1 m-0" style="font-size: 16px; font-weight: 700;">
+                                                    alt="topicImage" height="70px" width="70px" style="margin: 0rem;">
+                                                <h6 class="pt-1 my-auto" style="font-size: 16px; font-weight: 700;">
                                                     Total MCQ<br>
                                                     <span style="color: cornflowerblue;">10000+</span>
                                                 </h6>
@@ -45,14 +46,30 @@
                                         </div>
                                     </div>
 
+                                    <!-- Total live -->
 
-                                    <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <div class="col-lg-6 col-sm-6 ">
+                                        <div class="card" style=" border-radius: 8px;
+                                        background-color: #fcfbfb;">
+                                            <div class="card-body p-0 d-lg-flex justify-content-lg-evenly"
+                                                style="text-align: center;">
+                                                <img src="https://res.cloudinary.com/pioneer-alpha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1692391697/Sigmoid%20School%28Website%29/live_class2_spey2n.jpg?_s=public-apps"
+                                                    alt="topicImage" height="70px" width="70px" style="margin: 0rem;">
+                                                <h6 class="pt-1 my-auto" style="font-size: 16px; font-weight: 700;">
+                                                    Live Class<br>
+                                                    <span style="color: cornflowerblue;">150</span>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-sm-6">
                                         <div class="card" style=" border-radius: 10px;
                                         background-color: #fcfbfb;">
-                                            <div class="card-body p-0" style="text-align: center;">
+                                            <div class="card-body p-0 d-lg-flex justify-content-lg-evenly" style="text-align: center;">
                                                 <img src="https://res.cloudinary.com/pioneer-alpha/image/upload/v1692089483/Sigmoid%20School%28Website%29/new_subject_qzbi95.png"
-                                                    alt="quizImage" height="60px" width="60px" style="margin: 0rem;">
-                                                <h6 class="pt-1 m-0" style="font-size: 16px; font-weight: 700;">
+                                                    alt="quizImage" height="70px" width="70px" style="margin: 0rem;">
+                                                <h6 class="pt-1 my-auto" style="font-size: 16px; font-weight: 700;">
                                                     Total Subject
                                                     <br> <span style="color: cornflowerblue;">6</span>
                                                 </h6>
@@ -60,35 +77,52 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <!-- lecture sheet -->
+                                    <div class="col-lg-6 col-sm-6">
+                                        <div class="card" style=" border-radius: 8px;
+                                        background-color: #fcfbfb;">
+                                            <div class="card-body p-0 d-lg-flex justify-content-lg-evenly"
+                                                style="text-align: center;">
+                                                <img src="https://res.cloudinary.com/pioneer-alpha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1692391696/Sigmoid%20School%28Website%29/sheet_2_wayjfg.jpg?_s=public-apps"
+                                                    alt="quizImage" height="70px" width="70px" style="margin: 0rem;">
+                                                <h6 class="pt-1 my-auto" style="font-size: 16px; font-weight: 700;">
+                                                    Lecture Sheet
+                                                    <br> <span style="color: cornflowerblue;">60+</span>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    
+                                    <div class="col-lg-6 col-sm-6">
+                                        <div class="card" style=" border-radius: 8px;
+                                        background-color: #fcfbfb;">
+                                            <div class="card-body p-0 d-lg-flex justify-content-lg-evenly"
+                                                style="text-align: center;">
+                                                <img src="https://res.cloudinary.com/pioneer-alpha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1692391697/Sigmoid%20School%28Website%29/mcq_test_2_qeabli.jpg?_s=public-apps"
+                                                    alt="quizImage" height="70px" width="70px" style="margin: 0rem;">
+                                                <h6 class="pt-1 my-auto" style="font-size: 16px; font-weight: 700;">
+                                                    MCQ Exam
+                                                    <br> <span style="color: cornflowerblue;">100+</span>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-lg-6 col-sm-6">
                                         <div class="card" style=" border-radius: 10px;
                                         background-color: #fcfbfb;">
-                                            <div class="card-body p-0" style="text-align: center;">
+                                            <div class="card-body p-0 d-lg-flex justify-content-lg-evenly" style="text-align: center;">
                                                 <img src="https://res.cloudinary.com/pioneer-alpha/image/upload/v1692074399/Sigmoid%20School%28Website%29/subject_d4ux1z.png"
-                                                    alt="quizImage" height="60px" width="60px" style="margin: 0rem;">
-                                                <h6 class="pt-1 m-0" style="font-size: 16px; font-weight: 700;">
+                                                    alt="quizImage" height="70px" width="70px" style="margin: 0rem;">
+                                                <h6 class="pt-1 my-auto" style="font-size: 16px; font-weight: 700;">
                                                     Chapterwise
                                                     <br> <span style="color: cornflowerblue;">MCQ</span>
                                                 </h6>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div class="col-lg-3 col-md-6 col-sm-6">
-                                        <div class="card" style=" border-radius: 10px;
-                                        background-color: #fcfbfb;">
-                                            <div class="card-body p-0" style="text-align: center;">
-                                                <img src="https://res.cloudinary.com/pioneer-alpha/image/upload/v1692074400/Sigmoid%20School%28Website%29/topic_eplebv.png"
-                                                    alt="subjectImage" height="60px" width="60px" style="margin: 0rem;">
-                                                <h6 class="pt-1 m-0"
-                                                    style="font-size: 16px; font-weight: 700; text-align: center;">Topic
-                                                    <br>
-                                                    <span style="color: cornflowerblue;">30+</span>
-                                                </h6>
-                                            </div>
-                                        </div>
-                                    </div>
-
                                 </div>
                             </div>
                         </div>
@@ -96,7 +130,7 @@
 
 
 
-                    <div class="col-lg-4 col-md-5 col-sm-12 card p-2" style=" border-radius: 8px;
+                    <div class="col-lg-4 col-md-5 col-sm-12 card p-2 my-auto" style=" border-radius: 8px;
                     background-color: #5ff76529; border-color: #5ff76529;
                     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
 
@@ -196,10 +230,6 @@
             padding: 1rem;
             position: relative;
         }
-        
-        .accordian-content-block {
-            padding: 0px 0px;
-        }
 
         @media (max-width:601px) {
             .landingSection {
@@ -207,7 +237,25 @@
             }
         }
 
+        #courseDetails p {
+            font-size: 16px;
+            text-align: justify;
+            font-weight: 400;
+            line-height: normal;
+            color: rgb(4, 4, 19);
+        }
 
+        #courseTitle {
+            font-weight: 600;
+            letter-spacing: normal;
+            color: rgb(10, 9, 89);
+            line-height: normal;
+            text-align: left;
+        }
+
+        /* .accordian-content-block {
+            padding: 0px 0px;
+        } */
 
         /* upadated to show promo code */
         .toast:not(.show) {
