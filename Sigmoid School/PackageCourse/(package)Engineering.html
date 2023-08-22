@@ -20,8 +20,8 @@
                 <div class="row landingSection">
                     <div class="col-lg-8 col-md-7 col-sm-12">
                         <div class="card bg-transparent border-0 m-0">
-                            <div class="card-body">
-                                <h1 class="pt-1 m-0" style="font-weight: 800; color: rgb(10, 9, 89);">
+                            <div class="card-body p-0">
+                                <h1 class="pt-1 m-0" style="font-size: 36px; font-weight: 800; color: rgb(10, 9, 89);">
                                     {{TITLE}}
                                 </h1>
                                 <h3 class="pt-1 m-0" style="font-size: 18px; font-weight: 400; color: rgb(4, 4, 19);">
@@ -31,7 +31,7 @@
                         </div>
 
                         <div class="card bg-transparent border-0 m-0">
-                            <div class="card-body">
+                            <div class="card-body p-0">
                                 <div class="row">
                                     <div class="col-6 mx-auto d-lg-flex justify-content-sm-evenly justify-content-lg-center"
                                         style="text-align: center; border-radius: 8px;
@@ -100,8 +100,7 @@
 
 
                                 <div class="row my-3">
-                                    <div class="col-6 mx-auto d-lg-flex justify-content-evenly"
-                                        style="text-align: center; border-radius: 8px;
+                                    <div class="col-6 mx-auto d-lg-flex justify-content-evenly" style="text-align: center; border-radius: 8px;
                                 background-color: #fcfbfb;">
                                         <img src="https://res.cloudinary.com/pioneer-alpha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1692393199/Sigmoid%20School%28Website%29/single_course_mcq_lkyzos.jpg?_s=public-apps"
                                             alt="topicImage" height="100px" width="100px" style="margin: 0rem;">
@@ -248,32 +247,19 @@
 
         <!-- course Syllabus -->
 
-        <div data-cat="204" class="mt-2 is-section is-section-50 is-box" id="courseCurriculumBlock">
-            <div class="is-boxes">
-                <div class="is-box-centered">
-                    <div class="is-container container" style="margin-top: 0rem;margin-bottom: 0rem;">
-                        <div class="card">
-                            <div class="card-body">
+        <div data-cat="204" class="mt-3 mb-3 is-section is-section-100" id="courseCurriculumBlock">
+            <div class="is-container container" style=" margin-top: 0px; margin-bottom: 0px;">
+                <div class="card" style="border-radius: 8px;">
+                    <div class="card-body p-0">
+                        <h1 style="text-align: center; font-size: 28px; font-weight: 900; line-height: 1.1; color: rgb(10, 9, 89);"
+                            id="curriculumTitle">All Courses</h1>
 
-                                <div class="row">
-                                    <div class="col">
-                                        <h1 style="text-align: center; font-size: 28px; font-weight: 900; line-height: 1.1; color: rgb(10, 9, 89);"
-                                            id="curriculumTitle">All Courses</h1>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="spacer height-10"></div>
-                                    </div>
-                                </div>
-                                <div class="is-overlay-content spectre sp-content spCourseCurriculum"
-                                    data-type="coursecurr-3" data-module-desc="Course Curriculum"
-                                    data-dialog-width="1200px" data-dialog-height="600px" data-html="Yt5u5Pu"
-                                    data-settings="%5B%7B%20%22id%22%3A%20%22%22%7D%5D">wEv69E1
-                                </div>
-
-                            </div>
+                        <div class="is-overlay-content spectre sp-content spCourseCurriculum mt-3" data-type="coursecurr-3"
+                            data-module-desc="Course Curriculum" data-dialog-width="max-content"
+                            data-dialog-height="max-content" data-html="Yt5u5Pu"
+                            data-settings="%5B%7B%20%22id%22%3A%20%22%22%7D%5D">wEv69E1
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -332,6 +318,14 @@
             justify-content: space-evenly;
         }
 
+        #packageContents #courseslist a:first-child {
+            height: max-content;
+            display: block;
+        }
+
+        .packageCourseslist h5{
+            margin: 0px;
+        }
 
         .is-wrapper #courseImage {
             border-radius: 8px;
