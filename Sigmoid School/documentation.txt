@@ -1,0 +1,28 @@
+
+
+Follow course - 
+Prac_Biology course
+
+
+
+<!--course DESCRIPTION updated with P tag--> 
+ <body>
+ <h5 id="courseDetails" class="p-0 m-0 pt-1">
+                                    <p>
+                                        {{DESCRIPTION}}
+                                    </p>
+                                </h5>
+ </body>
+
+
+<style>
+ #courseDetails p{
+            letter-spacing: normal;
+            color: rgb(0, 0, 0);
+            font-family: Arial, sans-serif;
+            font-weight: 400;
+            font-size: 0.9rem;
+            line-height: normal;
+            text-align: left;
+        }
+</style>

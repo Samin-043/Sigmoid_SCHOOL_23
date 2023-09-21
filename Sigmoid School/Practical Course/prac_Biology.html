@@ -28,9 +28,11 @@
                                 <h2 id="courseTitle" class="pt-1 m-0">
                                     {{TITLE}}
                                 </h2>
-                                <h3 id="courseDetails" class="pt-1 m-0" style="font-size: 0.8rem; font-weight: 600; line-height: normal;">
-                                    {{DESCRIPTION}}
-                                </h3>
+                                <h5 id="courseDetails" class="p-0 m-0 pt-1">
+                                    <p>
+                                        {{DESCRIPTION}}
+                                    </p>
+                                </h5>
                             </div>
                         </div>
 
@@ -174,11 +176,12 @@
                                                     </h4>
 
                                                     <p class="my-auto"
-                                                        style="font-size: 14px; font-weight: 500; color: #3b3b3bab;">
+                                                        style="font-size: 0.9rem; font-weight: 500; color: #3b3b3bab;">
                                                         Assistant Professor, <strong>Govt Science College</strong>
                                                         <br>
                                                         <span class="my-0 rounded-1 p-1"
-                                                            style="background-color: rgb(229, 227, 227); margin-top: 10px; text-transform: capitalize;font-size: 14px; font-weight: 500;">Experienced Teacher </span>
+                                                            style="background-color: rgb(229, 227, 227); margin-top: 10px; text-transform: capitalize;font-size: 14px; font-weight: 500;">Experienced
+                                                            Teacher </span>
 
                                                         <!-- <span class="my-0"
                                                             style="line-height: normal; font-size: 0.7rem; font-weight: 500; color: #3b3b3bab; text-transform: capitalize;">Education,
@@ -312,12 +315,14 @@
             align-items: center;
         }
 
-        #courseDetails p {
-            font-size: 16px;
-            text-align: justify;
+        #courseDetails p{
+            letter-spacing: normal;
+            color: rgb(0, 0, 0);
+            font-family: Arial, sans-serif;
             font-weight: 400;
+            font-size: 0.9rem;
             line-height: normal;
-            color: rgb(4, 4, 19);
+            text-align: left;
         }
 
 
