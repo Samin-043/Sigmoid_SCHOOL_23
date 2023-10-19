@@ -13,7 +13,7 @@ Prac_Biology course
                                     </p>
                                 </h5>
  </body>
-
+`
 
 <style>
  #courseDetails p{
@@ -26,3 +26,52 @@ Prac_Biology course
             text-align: left;
         }
 </style>
+
+
+  <!-- instructor -->
+
+                        <div id="instructorTitle">
+                            <div class="card my-2 bg-transparent border-0 m-0">
+                                <div class="card-body p-0">
+                                    <h3 class="m-0"
+                                        style="text-transform: capitalize ;font-size: 24px; font-weight: 700; color: rgb(4, 4, 19);">
+                                        Instructor
+                                    </h3>
+
+                                    <div class="card"
+                                        style="background-color: #fcfbfb; border-radius: 8px; box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;">
+                                        <div class="card-body p-0">
+                                            <div class="card-body d-flex justify-content-center" style=" border-radius: 8px;
+                                            ">
+                                                <div class="customImageOutlayer my-auto">
+                                                    <img src="https://res.cloudinary.com/pioneer-alpha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1692376524/Digital_MCQ%28Graphy%20Website%29/Course%20Teacher/map%20course/instructor_mapCourse_hg6rnz.jpg?_s=public-apps"
+                                                        alt="image" class="instructorImage p-0" height="100%"
+                                                        width="100%" style="margin: 0rem;">
+                                                </div>
+                                                <!-- Shohel Sir -->
+                                                <div class="instrucorName my-auto mx-2">
+                                                    <h4 class="my-auto"
+                                                        style="font-size: 20px; font-weight: 600; margin-bottom: 0rem;">
+                                                        Zahid Sohel
+                                                    </h4>
+
+                                                    <p class="my-auto"
+                                                        style="font-size: 0.9rem; font-weight: 500; color: #3b3b3bab;">
+                                                        Assistant Professor, <strong>Govt Science College</strong>
+                                                        <br>
+                                                        <span class="my-0 rounded-1 p-1"
+                                                            style="background-color: rgb(229, 227, 227); margin-top: 10px; text-transform: capitalize;font-size: 14px; font-weight: 500;">Experienced
+                                                            Teacher </span>
+
+                                                        <!-- <span class="my-0"
+                                                            style="line-height: normal; font-size: 0.7rem; font-weight: 500; color: #3b3b3bab; text-transform: capitalize;">Education,
+                                                            31st
+                                                            BCS</span> -->
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
