@@ -1,6 +1,11 @@
 
+..........Follow Package Course............
+Follow Engineering Exam Batch (MCQ) course package page(default still now) 
 
-Follow course - 
+
+
+
+..............Follow course............ - 
 Prac_Biology course
 
 
@@ -75,3 +80,6 @@ Prac_Biology course
                                 </div>
                             </div>
                         </div>
+
+
+
