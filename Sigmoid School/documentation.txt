@@ -1,7 +1,12 @@
-
-.........Background Color..........
-background-color: rgb(249 250 251);
-
+#homePageBackground {
+            background-color: rgb(255 255 255);
+            background-image: url(https://res.cloudinary.com/pioneer-alpha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1699467090/Sigmoid%20School%28Website%29/Course%20Background%20Image/new_edited_Sigmoid_School-Course_Background-01_1_xkwgtj.jpg?_s=public-apps);
+            background-position: inherit;
+            background-attachment: inherit;
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 100%;
+        }
 
 
 ..........Follow Package Course............

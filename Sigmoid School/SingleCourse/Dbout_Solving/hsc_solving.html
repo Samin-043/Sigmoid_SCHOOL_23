@@ -31,33 +31,18 @@
                                     </h1>
 
                                     <!-- Course Description -->
-                                    <div class="card bg-transparent" style="border-radius: 8px;"
+                                    <div class="card bg-transparent border-0" style="border-radius: 8px;"
                                         id="courseDescriptionArea">
-
-                                        <div class="card bg-transparent border-0">
-                                            <div class="card-body p-0 courseDescription" id="descriptionId"
-                                                style="height: 60px;">
-                                                <h3 id="courseDetails" class="pt-1 m-0 courseDetailsSection"
-                                                    style="font-size: 16px;">
-                                                    {{DESCRIPTION}}
-                                                </h3>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="card-body p-1 mt-2 border-0 mx-auto showDetailsButton">
-                                            <button class="descriptionBtn mx-auto py-1 px-1" id="descriptionDetails"
-                                                onclick="showMoreDescription()">Show Details
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-                                                    <path fill-rule="evenodd"
-                                                        d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
-                                                </svg>
-                                            </button>
+                                        <div class="card-body p-0 courseDescription" id="descriptionId">
+                                            <h3 id="courseDetails" class="pt-1 m-0 courseDetailsSection"
+                                                style="font-size: 16px;">
+                                                {{DESCRIPTION}}
+                                            </h3>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
 
                             <!-- preview free quizes -->
                             <div class="card mt-2 border-0 bg-transparent">
@@ -65,34 +50,30 @@
                                     <div class="row benefitFromCourseSection">
                                         <div class="col my-2">
                                             <div class="card">
-                                                <div class="card-body benefitFromCourse d-flex">
-                                                    <!-- <div class="imageSection p-1 rounded-circle bg-light my-auto">
-                                                        <img src="https://res.cloudinary.com/pioneer-alpha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1701038243/Digital_MCQ%28Graphy%20Website%29/free_quizes_kg85vf.jpg?_s=public-apps"
+                                                <div class="card-body p-2 benefitFromCourse d-flex">
+                                                    <div class="imageSection p-1 rounded-circle bg-light my-auto">
+                                                        <img src="https://res.cloudinary.com/pioneer-alpha/image/upload/v1701111468/Sigmoid%20School%28Website%29/hsc_solving_lnmkf2.png"
                                                             class="p-1 my-auto" alt="freeMCQ" width="100%"
                                                             height="100%">
-                                                    </div> -->
-                                                    <h5 class="ms-2 my-auto">Free Quize</h5>
+                                                    </div>
+                                                    <h5 class="ms-2 my-auto">Problem Solving</h5>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="col my-2">
                                             <div class="card">
-                                                <div class="card-body benefitFromCourse d-flex">
-                                                    <!-- <div class="imageSection p-1 rounded-circle bg-light my-auto">
-                                                        <img src="https://res.cloudinary.com/pioneer-alpha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1701038249/Digital_MCQ%28Graphy%20Website%29/practice_quiz_bplwfr.jpg?_s=public-apps"
+                                                <div class="card-body p-2 benefitFromCourse d-flex">
+                                                    <div class="imageSection p-1 rounded-circle bg-light my-auto">
+                                                        <img src="https://res.cloudinary.com/pioneer-alpha/image/upload/v1701111469/Sigmoid%20School%28Website%29/any_time_vhopyv.png"
                                                             class="p-1 my-auto" alt="freeMCQ" width="100%"
                                                             height="100%">
-                                                    </div> -->
-                                                    <h5 class="ms-2 my-auto">Practice Quize</h5>
+                                                    </div>
+                                                    <h5 class="ms-2 my-auto">24 Hours</h5>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-
-
-
-
                                 </div>
                             </div>
                         </div>
@@ -273,12 +254,12 @@ border-radius: 8px;">
 
         .courseDetailsSection table tbody tr:first-child {
             background-color: rgb(207, 226, 243);
-            font-weight: 700;
+            font-weight: 600;
             font-size: 10pt;
             text-align: start;
             vertical-align: middle;
         }
-        
+
 
         #courseDescriptionArea {
             overflow-x: auto;
@@ -422,7 +403,7 @@ border-radius: 8px;">
         }
 
         ::marker {
-            color: #21d0f3;
+            color: #2196F3;
         }
 
 
@@ -558,7 +539,7 @@ border-radius: 8px;">
     </style>
 
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         function showMoreDescription() {
             let doc = document.getElementById('descriptionId');
             let btn = document.getElementById('descriptionDetails');
@@ -581,7 +562,7 @@ border-radius: 8px;">
                 `;
             }
         }
-    </script>
+    </script> -->
 
 
 
