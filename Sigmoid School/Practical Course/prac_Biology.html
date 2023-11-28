@@ -17,22 +17,36 @@
     -->
 
 
-    <div id="1692065886326d" data-cat="1" class="bodySection is-section is-section-100"
-        style="background-image: linear-gradient(0deg, rgba(62, 67, 197, 0.794), rgb(236, 78, 130));">
-        <div data-cat="52" class="is-section is-box" id="1692060009769">
+    <div data-cat="52" class="is-section is-box is-section-20" id="homePageBackground">
+        <div id="1692065886326d" data-cat="1" class="bodySection is-section is-section-100">
             <div class="is-container container" id="singleCourseId" style="margin-top: 0px; margin-bottom: 0px;">
                 <div class="row landingSection">
                     <div class="col-lg-8 col-md-7 col-sm-12">
+                        <!-- title&Description -->
                         <div class="card bg-transparent border-0 m-0">
                             <div class="card-body p-0">
                                 <h2 id="courseTitle" class="pt-1 m-0">
                                     {{TITLE}}
                                 </h2>
-                                <h5 id="courseDetails" class="p-0 m-0 pt-1">
-                                    <p>
-                                        {{DESCRIPTION}}
-                                    </p>
-                                </h5>
+                                <h1 id="curriculumTitle"
+                                    style="color : rgb(1 1 16); font-size: 24px; font-weight: 700; line-height: 1.1; ">
+                                    Description
+                                </h1>
+
+                                <!-- Course Description -->
+                                <div class="card bg-transparent border-0" style="border-radius: 8px;"
+                                    id="courseDescriptionArea">
+
+                                    <div class="card bg-transparent border-0">
+                                        <div class="card-body p-1 courseDescription" id="descriptionId">
+                                            <h3 id="courseDetails" class="pt-1 m-0 courseDetailsSection"
+                                                style="font-size: 16px;">
+                                                {{DESCRIPTION}}
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
 
@@ -149,7 +163,6 @@
 
 
                         <!-- instructor -->
-
                         <div id="instructorTitle">
                             <div class="card my-2 bg-transparent border-0 m-0">
                                 <div class="card-body p-0">
@@ -161,7 +174,7 @@
                                     <div class="card"
                                         style="background-color: #fcfbfb; border-radius: 8px; box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;">
                                         <div class="card-body p-0">
-                                            <div class="card-body d-flex justify-content-center" style=" border-radius: 8px;
+                                            <div class="card-body d-flex" style=" border-radius: 8px;
                                             ">
                                                 <div class="customImageOutlayer my-auto">
                                                     <img src="https://res.cloudinary.com/pioneer-alpha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1692376524/Digital_MCQ%28Graphy%20Website%29/Course%20Teacher/map%20course/instructor_mapCourse_hg6rnz.jpg?_s=public-apps"
@@ -198,13 +211,19 @@
                     </div>
 
 
-                    <div class="col-lg-4 col-md-5 col-sm-12 card pb-2 h-100" style="border-radius: 8px;
-                    background-color: transparent; border-color: #5ff76529;
-                    box-shadow: #03A9F6 0px 8px 8px;">
-                        <img id="courseImage" alt="courseImage" data-src="/resources/images/cc1.jpg"
+                    <!-- course Price & course poster section -->
+                    <div class="col-lg-4 col-md-5 col-sm-12 card p-1 pb-0 h-100" style=" border-radius: 8px;
+                    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+
+                        <img id="courseImage" alt="courseImage" data-src="/resources/images/cc1.jpg" width="100%"
                             src="/resources/images/cc1.jpg">
-                        <div class="pt-1 m-0">
+                        <div class="pt-1 m-0 coursePricing">
                             {{PRICING}}
+                        </div>
+
+                        <div class="card-body p-1" id="courseTagline">
+                            <p class="m-0 p-0 mt-1" style="color:rgb(0 21 138) ;">
+                                {{TAGLINE}}</p>
                         </div>
                     </div>
                 </div>
@@ -212,19 +231,22 @@
         </div>
 
 
-
         <!-- course Syllabus -->
         <div id="1692065261158d" data-cat="204" class="is-section is-section-100 is-box">
-            <div class="is-container container" style="max-width: 1100px; margin-top: 0px; margin-bottom: 0px;">
+            <div class="is-container container" style="max-width: 1100px; margin-top: 10px; margin-bottom: 0px;
+    background-color: rgb(15 23 42);
+border-radius: 8px;">
                 <div class="card bg-transparent border-0">
                     <div class="card-body">
-                        <div class="row">
+                        <div class="row my-auto">
                             <div class="col" id="ratingHeading">
                                 <h1 id="curriculumTitle"
-                                    style="font-size: 24px; font-weight: 700; line-height: 1.1; text-align: center;">
+                                    style="color : rgb(243 244 246); font-size: 24px; font-weight: 700; line-height: 1.1; text-align: center;">
                                     Course Content</h1>
                             </div>
                         </div>
+
+
                         <div class="row">
                             <div class="col">
                                 <div class="spacer height-10"></div>
@@ -241,16 +263,18 @@
             </div>
         </div>
 
+
+
         <!-- course review -->
         <div data-cat="205" class="is-section is-section-60" id="1692060009772">
-            <div class="is-boxes">
-                <div class="is-box-centered">
-                    <div class="is-container container" style="max-width: 1100px;">
+            <div class="card border-0 bg-transparent">
+                <div class="card-body">
+                    <div class="is-container container" style="max-width: 1100px; margin-top: 0px; margin-bottom: 0px;">
                         <div class="row" id="ratingHeading">
                             <div class="col">
                                 <h1
                                     style="text-align: center; font-size: 28px; line-height: 1.1; font-weight: 900; letter-spacing: 0px; color: rgb(10, 9, 89); margin-bottom: 44px;">
-                                    Feedback about this course</h1>
+                                    Feedback about this MCQ Exam Course</h1>
                             </div>
                         </div>
 
@@ -261,6 +285,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 
 
@@ -315,7 +340,7 @@
             align-items: center;
         }
 
-        #courseDetails p{
+        #courseDetails p {
             letter-spacing: normal;
             color: rgb(0, 0, 0);
             font-family: Arial, sans-serif;
@@ -381,6 +406,10 @@
             overflow: hidden;
             align-items: center;
             margin: 5px;
+        }
+
+        .customImageOutlayer img {
+            flex-shrink: 0;
         }
 
 
@@ -478,6 +507,134 @@
             #singleCourseId {
                 margin-top: 10px;
             }
+        }
+
+
+        /* tagline update */
+
+
+        #courseTagline p {
+            margin: 0px;
+            padding: 0px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: normal;
+            color: rgb(1 1 16);
+        }
+
+        #courseTagline ul {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #courseTagline ul li {
+            margin: 0px;
+            padding: 0px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: normal;
+            color: rgb(1 1 16);
+        }
+
+        /* user review styles */
+
+        .is-box#createCustomReview {
+            background-color: #f5f5f500;
+        }
+
+        .is-box#createCustomReview .textarea-cont {
+            background-color: rgb(15 23 42);
+        }
+
+        .is-box#createCustomReview .textarea-cont #reviewText {
+            color: #fff;
+        }
+
+
+
+        /* list styles */
+
+        #courseTagline ul li {
+            list-style-type: disclosure-closed;
+            padding-left: 1px;
+            padding: 5px;
+        }
+
+        ::marker {
+            color: #2196F3;
+        }
+
+
+
+
+        /* pricing section button updated */
+        .pricing .cartBtns .btn.btn-primary {
+            border-radius: 8px;
+            width: 100%;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+
+        #homePageBackground {
+            background-color: rgb(255 255 255);
+            background-image: url(https://res.cloudinary.com/pioneer-alpha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1699467090/Sigmoid%20School%28Website%29/Course%20Background%20Image/new_edited_Sigmoid_School-Course_Background-01_1_xkwgtj.jpg?_s=public-apps);
+            background-position: inherit;
+            background-attachment: inherit;
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 100%;
+        }
+
+
+
+        /* coursePricing */
+        @media (max-width: 768px) {
+
+            .bodySection {
+                position: relative;
+            }
+
+            .coursePricing {
+                display: block;
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                z-index: 99;
+                box-shadow: -1px -11px 42px 0 rgba(0, 0, 0, .1);
+                padding: 5px 5px;
+                background-color: aliceblue;
+            }
+
+            .coursePricing .cartBtns {
+                width: 100%;
+            }
+
+            .is-container {
+                z-index: initial;
+            }
+        }
+
+        /* benefitSectionStyles */
+        .benefitFromCourse .imageSection {
+            height: 60px;
+            width: 60px;
+        }
+
+        .benefitFromCourse .imageSection img {
+            flex-shrink: 0;
+            margin: 0px;
+        }
+
+        .benefitFromCourse ul li {
+            color: rgb(1 1 16);
+            font-size: 16px;
+            font-weight: 500;
+            line-height: normal;
+            list-style-type: disclosure-open;
+            padding-left: 1px;
+            padding: 0px;
+            margin: 0px;
         }
     </style>
 
