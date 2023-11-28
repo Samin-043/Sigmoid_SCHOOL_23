@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{TITLE}}</title>
+    <title>{{Title}}</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
@@ -35,7 +35,7 @@
                                         id="courseDescriptionArea">
 
                                         <div class="card bg-transparent border-0">
-                                            <div class="card-body p-0 courseDescription" id="descriptionId"
+                                            <div class="card-body p-1 courseDescription" id="descriptionId"
                                                 style="height: 60px;">
                                                 <h3 id="courseDetails" class="pt-1 m-0 courseDetailsSection"
                                                     style="font-size: 16px;">
@@ -56,50 +56,17 @@
                                             </button>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-
-                            <!-- preview free quizes -->
-                            <div class="card mt-2 border-0 bg-transparent">
-                                <div class="card-body p-0">
-                                    <div class="row benefitFromCourseSection">
-                                        <div class="col my-2">
-                                            <div class="card">
-                                                <div class="card-body benefitFromCourse d-flex">
-                                                    <!-- <div class="imageSection p-1 rounded-circle bg-light my-auto">
-                                                        <img src="https://res.cloudinary.com/pioneer-alpha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1701038243/Digital_MCQ%28Graphy%20Website%29/free_quizes_kg85vf.jpg?_s=public-apps"
-                                                            class="p-1 my-auto" alt="freeMCQ" width="100%"
-                                                            height="100%">
-                                                    </div> -->
-                                                    <h5 class="ms-2 my-auto">Free Quize</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col my-2">
-                                            <div class="card">
-                                                <div class="card-body benefitFromCourse d-flex">
-                                                    <!-- <div class="imageSection p-1 rounded-circle bg-light my-auto">
-                                                        <img src="https://res.cloudinary.com/pioneer-alpha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1701038249/Digital_MCQ%28Graphy%20Website%29/practice_quiz_bplwfr.jpg?_s=public-apps"
-                                                            class="p-1 my-auto" alt="freeMCQ" width="100%"
-                                                            height="100%">
-                                                    </div> -->
-                                                    <h5 class="ms-2 my-auto">Practice Quize</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
 
 
                                 </div>
                             </div>
+
+
                         </div>
 
 
-
-                        <div class="col-lg-4 col-md-5 col-sm-12 card p-1 pb-2 h-100" style=" border-radius: 8px;
+                        <!-- course Price & course poster section -->
+                        <div class="col-lg-4 col-md-5 col-sm-12 card p-1 pb-0 h-100" style=" border-radius: 8px;
                     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
 
                             <img id="courseImage" alt="courseImage" data-src="/resources/images/cc1.jpg" width="100%"
@@ -109,8 +76,16 @@
                             </div>
 
                             <div class="card-body p-1" id="courseTagline">
-                                <p class="m-0 p-0 mt-1 mb-1" style="color:rgb(0 21 138) ;">
+                                <p class="m-0 p-0 mt-1" style="color:rgb(0 21 138) ;">
                                     {{TAGLINE}}</p>
+                            </div>
+
+                            <!-- preview free quizes -->
+                            <div class="card-body p-0 benefitFromCourse m-0">
+                                <ul class="p-0 d-flex justify-content-around">
+                                    <li>Free MCQ</li>
+                                    <li>Practice MCQ</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -273,12 +248,12 @@ border-radius: 8px;">
 
         .courseDetailsSection table tbody tr:first-child {
             background-color: rgb(207, 226, 243);
-            font-weight: 700;
+            font-weight: 600;
             font-size: 10pt;
             text-align: start;
             vertical-align: middle;
         }
-        
+
 
         #courseDescriptionArea {
             overflow-x: auto;
@@ -391,11 +366,12 @@ border-radius: 8px;">
 
 
         #courseTagline p {
-            text-transform: capitalize;
-            color: rgb(1 1 16);
-            font-weight: 400;
-            font-size: 14px;
+            margin: 0px;
+            padding: 0px;
+            font-size: 16px;
+            font-weight: 500;
             line-height: normal;
+            color: rgb(1 1 16);
         }
 
         #courseTagline ul {
@@ -422,7 +398,7 @@ border-radius: 8px;">
         }
 
         ::marker {
-            color: #21d0f3;
+            color: #2196F3;
         }
 
 
@@ -489,8 +465,7 @@ border-radius: 8px;">
             padding-top: 0px;
             padding-bottom: 0px;
         }
-
-
+        
         #homePageBackground {
             background-color: rgb(255 255 255);
             background-image: url(https://res.cloudinary.com/pioneer-alpha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1699467090/Sigmoid%20School%28Website%29/Course%20Background%20Image/new_edited_Sigmoid_School-Course_Background-01_1_xkwgtj.jpg?_s=public-apps);
@@ -542,18 +517,15 @@ border-radius: 8px;">
             margin: 0px;
         }
 
-        .benefitFromCourse h5 {
-            color: #fcfbfb;
-            font-size: 1rem;
+        .benefitFromCourse ul li {
+            color: rgb(1 1 16);
+            font-size: 16px;
             font-weight: 500;
-            line-height: 15pt;
-        }
-
-
-        .benefitFromCourseSection .card {
-            border-radius: 6px;
-            border-color: rgb(15 23 42);
-            background-color: rgb(15 23 42);
+            line-height: normal;
+            list-style-type: disclosure-open;
+            padding-left: 1px;
+            padding: 0px;
+            margin: 0px;
         }
     </style>
 
