@@ -31,14 +31,38 @@
                                     </h1> -->
 
                                     <!-- Course Description -->
-                                    <div class="card bg-transparent border-0">
-                                        <div class="card-body p-1 courseDescription" id="descriptionId">
-                                            <h3 id="courseDetails" class="pt-1 m-0 courseDetailsSection mx-auto"
-                                                style="font-size: 16px;">
-                                                {{DESCRIPTION}}
-                                            </h3>
+                                    <h1 id="curriculumTitle"
+                                        style="color : rgb(1 1 16); font-size: 24px; font-weight: 700; line-height: 1.1; ">
+                                        Description
+                                    </h1>
+
+                                    <!-- Course Description -->
+                                    <div class="card bg-transparent" style="border-radius: 8px;"
+                                        id="courseDescriptionArea">
+
+                                        <div class="card bg-transparent border-0">
+                                            <div class="card-body p-1 courseDescription" id="descriptionId"
+                                                style="height: 60px;">
+                                                <h3 id="courseDetails" class="pt-1 m-0 courseDetailsSection"
+                                                    style="font-size: 16px;">
+                                                    {{DESCRIPTION}}
+                                                </h3>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="card-body p-1 mt-2 border-0 mx-auto showDetailsButton">
+                                            <button class="descriptionBtn mx-auto py-1 px-1" id="descriptionDetails"
+                                                onclick="showMoreDescription()">Show Details
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
+                                                </svg>
+                                            </button>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -64,6 +88,7 @@
                                 <ul class="p-0 d-flex justify-content-around">
                                     <li>Free MCQ</li>
                                     <li>Practice MCQ</li>
+                                    <li>Practice CQ</li>
                                 </ul>
                             </div>
                         </div>
@@ -193,7 +218,7 @@ border-radius: 8px;">
             font-weight: 500;
             line-height: normal;
             color: rgb(1 1 16);
-        }   
+        }
 
 
         .courseDetailsSection table tbody tr {
@@ -202,7 +227,7 @@ border-radius: 8px;">
             line-height: normal;
         }
 
-        .courseDetailsSection table{
+        .courseDetailsSection table {
             width: 100%;
         }
 
@@ -437,10 +462,10 @@ border-radius: 8px;">
             text-decoration: none;
         }
 
-        /* .courseDescription {
+        .courseDescription {
             height: 60px;
             overflow-y: hidden;
-        } */
+        }
 
         /* pricing section button updated */
         .pricing .cartBtns .btn.btn-primary {
@@ -511,8 +536,55 @@ border-radius: 8px;">
             padding: 0px;
             margin: 0px;
         }
+
+
+        /*updated need for for footer styles*/
+        .bg-dark {
+            --bs-info-rgb: 50, 20, 50;
+            --bs-bg-opacity: 1;
+            background-color: rgba(var(--bs-info-rgb), var(--bs-bg-opacity)) !important;
+        }
+
+        footer .socialIcons {
+            text-align: right;
+        }
+
+        @media (max-width:768px) {
+            footer .socialIcons {
+                text-align: center;
+            }
+        }
     </style>
-    
+
+
+    <script type="text/javascript">
+        function showMoreDescription() {
+            let doc = document.getElementById('descriptionId');
+            let btn = document.getElementById('descriptionDetails');
+
+            if (doc.style.height === "60px") {
+                doc.style.height = "100%";
+
+                btn.innerHTML = `Show Less
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+</svg>
+            `;
+            }
+            else {
+                doc.style.height = "60px"
+                btn.innerHTML = `Show Details
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+</svg>
+            `;
+            }
+        }
+    </script>
+
+
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
