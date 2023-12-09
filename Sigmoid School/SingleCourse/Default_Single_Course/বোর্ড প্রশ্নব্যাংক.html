@@ -317,9 +317,10 @@ border-radius: 8px;">
 
         .coursecurr4 .accordian-content-card__title {
             font-weight: 500;
-            font-size: 16px;
+            font-size: 10pt;
+            vertical-align: middle;
             line-height: normal;
-            color: #9c27b0
+            color: #090f2a !important;
         }
 
         .accordian-content-block {
@@ -346,6 +347,47 @@ border-radius: 8px;">
             padding: 10px;
             position: relative;
         }
+
+        .coursecurr4 .accordian-content-card__link a {
+            font-weight: 400;
+            font-size: 10pt;
+            line-height: normal;
+            text-decoration: none;
+            border-style: hidden;
+            font-size: 14px;
+            padding: 8px 24px;
+            border-radius: 50px;
+            background: #eaecf0;
+        }
+
+
+        .coursecurr4 .accordian-content-card__link a:hover {
+            font-weight: 400;
+            font-size: 10pt;
+            line-height: normal;
+            text-decoration: none;
+            border-style: hidden;
+            font-size: 14px;
+            padding: 8px 24px;
+            border-radius: 50px;
+            background: #dddfe4;
+        }
+
+        .accordian-content-card__link {
+            display: contents;
+        }
+
+
+        .accordian-content-card__link a span {
+            font-size: 9pt;
+            line-height: normal;
+            vertical-align: middle;
+            text-decoration: none;
+            margin: 0px;
+            padding: 0px;
+            color: #002570 !important;
+        }
+
 
 
         /* upadated to show promo code */
@@ -448,32 +490,14 @@ border-radius: 8px;">
             font-weight: 400;
         }
 
-        /* .coursecurr4 .accordian-content-card__link a {
-            font-weight: 500;
-            font-size: 16px;
-            line-height: normal;
-            text-decoration: none;
-        } */
 
-        .accordian-content-card__link a span {
-            font-weight: 500;
-            font-size: 16px;
-            line-height: normal;
-            text-decoration: none;
-        }
+
 
         .courseDescription {
             height: 60px;
             overflow-y: hidden;
         }
 
-        /* pricing section button updated */
-        .pricing .cartBtns .btn.btn-primary {
-            border-radius: 8px;
-            width: 100%;
-            padding-top: 0px;
-            padding-bottom: 0px;
-        }
 
         #homePageBackground {
             background-color: rgb(255 255 255);
@@ -486,6 +510,19 @@ border-radius: 8px;">
         }
 
 
+        /* pricing section button updated */
+        .pricing .cartBtns .btn.btn-primary {
+            border-radius: 8px;
+            width: 100%;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+
+        .coursePricing .pricing div {
+            display: block !important;
+            margin-bottom: 5px !important;
+            margin-top: 5px !important;
+        }
 
         /* coursePricing */
         @media (max-width: 768px) {
@@ -580,6 +617,7 @@ border-radius: 8px;">
             `;
             }
         }
+
     </script>
 
 
