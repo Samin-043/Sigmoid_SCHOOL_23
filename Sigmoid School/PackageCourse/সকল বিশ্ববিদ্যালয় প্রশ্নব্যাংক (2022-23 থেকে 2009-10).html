@@ -22,7 +22,7 @@
                             <div class="card bg-transparent border-0 m-0">
                                 <div class="card-body p-0">
                                     <h1 class="pt-1 m-0"
-                                        style="font-size: 2rem; font-weight: 700; color: rgb(10, 9, 89); line-height: normal;">
+                                        style="font-size: 24pt; font-weight: 700; color: rgb(10, 9, 89); line-height: normal;">
                                         {{TITLE}}
                                     </h1>
 
@@ -208,7 +208,7 @@
                             </div>
                         </div>
 
-                        
+
 
                         <!-- course Price & course poster section -->
                         <div class="col-lg-4 col-md-5 col-sm-12 card p-1 pb-0 h-100" style=" border-radius: 8px;
@@ -233,11 +233,10 @@
 
             <!-- course Syllabus -->
             <div data-cat="204" class="mt-2 mb-2 is-section is-section-100" id="courseCurriculumBlock">
-                <div class="is-container container" style=" margin-top: 0px; margin-bottom: 0px;">
-                    <div class="card" style="border-radius: 8px;">
+                <div class="is-container container packageCourses" style=" margin-top: 0px; margin-bottom: 0px;">
+                    <div class="card border-0 bg-transparent">
                         <div class="card-body p-0">
-                            <h1 style="text-align: center; font-size: 28px; font-weight: 900; line-height: 1.1; color: rgb(10, 9, 89);"
-                                id="curriculumTitle">All Courses</h1>
+                            <h1 id="curriculumTitle">All Courses</h1>
 
                             <div class="is-overlay-content spectre sp-content spCourseCurriculum mt-3"
                                 data-type="coursecurr-3" data-module-desc="Course Curriculum"
@@ -253,9 +252,9 @@
 
             <!-- course review -->
             <div data-cat="205" class="is-section is-section-60" id="1692060009772">
-                <div class="is-boxes">
-                    <div class="is-box-centered">
-                        <div class="is-container container" style="max-width: 1100px;">
+                <div class="is-boxes mt-1">
+                    <div class="is-box-centered mt-2">
+                        <div class=" container" style="max-width: 1100px; margin-top: 10px; margin-bottom: 0px;">
                             <div class="row" id="ratingHeading">
                                 <div class="col">
                                     <h1
@@ -310,7 +309,10 @@
 
 
         .packageCourseslist h5 {
-            margin: 0px;
+            margin: 0px !important;
+            line-height: normal !important;
+            font-size: 10pt !important;
+            font-weight: 700 !important;
         }
 
         .is-wrapper #courseImage {
@@ -368,7 +370,7 @@
             margin: 0px;
             margin-top: 10px;
             margin-bottom: 10px;
-            padding: 0px 5px;
+            padding: 5px 0px;
             font-size: 16px;
             text-align: justify;
             font-weight: 500;
@@ -589,7 +591,8 @@
             margin-bottom: 0;
             width: 100%;
             height: 200px;
-            max-height: initial;
+            border-radius: 6px !important;
+            max-height: 100% !important;
         }
 
         #courseDescriptionArea button {
@@ -617,11 +620,21 @@
 
         .is-box#createCustomReview .textarea-cont {
             background-color: rgb(15 23 42);
+            border-radius: 10px !important;
         }
 
         .is-box#createCustomReview .textarea-cont #reviewText {
             color: #fff;
         }
+
+
+        .createCustomReviewBtn {
+            padding: 14px 28px !important;
+            font-size: 1rem !important;
+            font-weight: 600 !important;
+            border-radius: 10px !important;
+        }
+
 
         /* https://res.cloudinary.com/pioneer-alpha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1699467090/Sigmoid%20School%28Website%29/Course%20Background%20Image/new_edited_Sigmoid_School-Course_Background-01_1_xkwgtj.jpg?_s=public-apps */
         #homePageBackground {
@@ -635,16 +648,29 @@
         }
 
 
+
         /* pricing section button updated */
         .pricing .cartBtns .btn.btn-primary {
             border-radius: 8px;
             width: 100%;
-            padding-top: 0px;
-            padding-bottom: 0px;
+            border-radius: 6px !important;
+            padding: 14px 28px !important;
         }
+
+        .coursePricing .pricing div {
+            display: block !important;
+            margin-bottom: 5px !important;
+            margin-top: 5px !important;
+        }
+
 
         /* coursePricing */
         @media (max-width: 768px) {
+
+            .pricing .cartBtns .btn.btn-primary {
+                border-radius: 50px !important;
+                padding: 14px 28px !important;
+            }
 
             .bodySection {
                 position: relative;
@@ -671,6 +697,8 @@
             }
         }
 
+
+
         /* benefitSectionStyles */
         .benefitFromCourse .imageSection {
             height: 60px;
@@ -691,6 +719,85 @@
             padding-left: 1px;
             padding: 0px;
             margin: 0px;
+        }
+
+
+
+        /*updated need for for footer styles*/
+        .bg-dark {
+            --bs-info-rgb: 50, 20, 50;
+            --bs-bg-opacity: 1;
+            background-color: rgba(var(--bs-info-rgb), var(--bs-bg-opacity)) !important;
+        }
+
+        footer .socialIcons {
+            text-align: right;
+        }
+
+        @media (max-width:768px) {
+            footer .socialIcons {
+                text-align: center;
+            }
+        }
+
+
+
+        /* all courses area customization */
+
+        .packageCourseslist .column.third {
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            padding: 3px;
+            background: #fcfbfb;
+            border-radius: 6px;
+            transition: transform 0.3s ease-in-out;
+            margin: 10px !important;
+        }
+
+
+        .packageCourseslist .column.third:hover {
+            transform: scale(1.05);
+        }
+
+        .packageCourseslist .column.third a {
+            font-size: 10pt !important;
+            line-height: normal !important;
+            font-weight: 600 !important;
+            vertical-align: text-top;
+            text-transform: capitalize;
+            font-family: cursive;
+        }
+
+        .packageCourses {
+            background: rgb(15 23 42);
+            border-radius: 6px !important;
+        }
+
+        .packageCourses h1 {
+            text-align: center;
+            font-size: 1.2rem !important;
+            font-weight: 700 !important;
+            line-height: normal !important;
+            color: #f9fafc !important;
+            margin: 14px 0px !important;
+        }
+
+        .viewMorePackCourse {
+            text-align: right;
+            font-weight: 500;
+            cursor: pointer;
+            line-height: normal !important;
+            width: max-content !important;
+            margin: 5px !important;
+            margin-left: auto !important;
+            border-style: hidden;
+            font-size: 14px;
+            padding: 8px 24px;
+            border-radius: 6px;
+            background: #f9fafc;
+        }
+
+        .viewMorePackCourse:hover {
+            background: #e3e4e5;
         }
     </style>
 
