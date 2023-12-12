@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
     <title>{{TITLE}}</title>
 </head>
 
@@ -220,10 +225,61 @@
                                 {{PRICING}}
                             </div>
 
+                            <!-- video to show out our demo class -->
+                            <!-- <div class="card demoClass">
+                                <div class="card-body p-0">
+                                    <a href="">ডেমো ক্লাস দেখুন</a>
+                                </div>
+                            </div> -->
+
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="demoClass" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                প্যাকেজ টি কেন কিনবো ?
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor"
+                                    class="bi bi-play" viewBox="0 0 16 16">
+                                    <path
+                                        d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z" />
+                                </svg>
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog demoClass modal-dialog-centered modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header demoClass">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+                                                    style="color: rgb(46 16 101);" fill="currentColor"
+                                                    class="bi bi-youtube" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408z" />
+                                                </svg>
+                                                প্যাকেজ টি কেন কিনবো
+                                            </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body demoClass">
+                                            <iframe width="560"
+                                                src="https://www.youtube.com/embed/hbIuCHcRoSA?si=2VRY64PGezpT1oi7"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                allowfullscreen></iframe>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
                             <div class="card-body p-1" id="courseTagline">
                                 <p class="m-0 p-0 mt-1" style="color:rgb(0 21 138) ;">
                                     {{TAGLINE}}</p>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -799,7 +855,67 @@
         .viewMorePackCourse:hover {
             background: #e3e4e5;
         }
+
+        .demoClass a {
+            padding: 14px 28px;
+
+        }
+
+        button.demoClass {
+            padding: 14px 28px !important;
+            background-color: #6000b800;
+            cursor: pointer;
+            color: rgb(15 23 42);
+            border-radius: 6px;
+            border-color: rgb(15 23 42);
+            width: 100% !important;
+            max-width: max-content !important;
+            vertical-align: middle;
+            margin: 5px auto;
+            font-size: 10pt !important;
+        }
+
+        button.demoClass:hover {
+            background-color: rgb(15 23 42);
+            color: #fcfbfb;
+            border-radius: 6px;
+            border-color: #fcfbfb;
+
+        }
+
+        .modal-header.demoClass h1 {
+            font-size: 11pt !important;
+            font-weight: 500 !important;
+            padding: 2px 0px !important;
+            line-height: normal !important;
+            vertical-align: middle !important;
+            color: rgb(46 16 101) !important;
+        }
+
+
+        .demoClass iframe {
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+
+        .demoClass .modal-content {
+            border-radius: 6px !important;
+            opacity: 1 !important;
+        }
+
+
+        @media (min-width:426px) {
+            .demoClass .modal-content {
+                height: 550px !important;
+            }
+        }
+
+        .modal#exampleModal {
+            opacity: 1 !important;
+        }
     </style>
+
 
 
 
