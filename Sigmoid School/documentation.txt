@@ -1,9 +1,12 @@
 
 <--------    package course update needed this html ----->
-      <!-- course review -->
+
+follow tgis package course = সকল বিশ্ববিদ্যালয় প্রশ্নব্যাংক (2022-23 থেকে 2009-10)
+
+  <!-- course review -->
             <div data-cat="205" class="is-section is-section-60" id="1692060009772">
-                <div class="is-boxes">
-                    <div class="is-box-centered">
+                <div class="is-boxes mt-1">
+                    <div class="is-box-centered mt-2">
                         <div class=" container" style="max-width: 1100px; margin-top: 10px; margin-bottom: 0px;">
                             <div class="row" id="ratingHeading">
                                 <div class="col">
@@ -21,43 +24,6 @@
                 </div>
             </div>
 
-            
-             
-
-        
-        
-        
-        
-        /* toast message - user to see full contents */
-        #toSeeContent {
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            display: contents;
-            background: #2196F3;
-            border-color: #2196F3;
-            color: #eaecf0;
-            font-weight: 400;
-            vertical-align: middle;
-            z-index: 99999;
-            border-radius: 0px;
-        }
-
-        #toSeeContent p {
-            margin: 0rem;
-            font-size: 12pt;
-            line-height: normal;
-            vertical-align: middle; 
-        }
-
-        #toSeeContent .btn.btn-default {
-            margin: 0rem;
-            padding: 0rem;
-            vertical-align: middle;
-            padding-left: 5px;
-            background: inherit;
-        }
 
 
  <script type="text/javascript">
