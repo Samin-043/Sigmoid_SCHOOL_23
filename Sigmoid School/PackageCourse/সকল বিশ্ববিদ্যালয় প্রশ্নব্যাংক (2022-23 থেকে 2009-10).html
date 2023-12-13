@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no"">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
     <link href=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
 
@@ -56,9 +56,8 @@
                                                     </div>
 
                                                     <h6 class="pt-1 my-auto me-auto"
-                                                        style="font-size: 18px; font-weight: 700; color: rgb(249 250 251);">
-                                                        Total Courses<br>
-                                                        <span style="color: rgb(59 130 246);">7</span>
+                                                        style="font-size: 18px; font-weight: 700; color: rgb(249 250 251); text-transform: capitalize;">
+                                                        7 Courses In 1 Package
                                                     </h6>
                                                 </div>
                                             </div>
@@ -260,11 +259,18 @@
                                                 aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body demoClass">
+
                                             <iframe width="560"
-                                                src="https://www.youtube.com/embed/hbIuCHcRoSA?si=2VRY64PGezpT1oi7"
+                                                src="https://www.youtube-nocookie.com/embed/hbIuCHcRoSA?si=PuUe6vn2rSmqUbrI"
                                                 title="YouTube video player" frameborder="0"
                                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                                 allowfullscreen></iframe>
+
+                                            <!-- <iframe width="560"
+                                                src="https://www.youtube.com/embed/hbIuCHcRoSA?si=2VRY64PGezpT1oi7"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; aut   oplay=true; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                allowfullscreen></iframe> -->
                                         </div>
 
                                     </div>
@@ -286,7 +292,7 @@
 
             <!-- course Syllabus -->
             <div data-cat="204" class="mt-2 mb-2 is-section is-section-100" id="courseCurriculumBlock">
-                <div class="is-container container packageCourses" style="max-width: 1150px; margin-top: 0px; margin-bottom: 0px;">
+                <div class="is-container container packageCourses">
                     <div class="card border-0 bg-transparent">
                         <div class="card-body p-0">
                             <h1 id="curriculumTitle">All Courses</h1>
@@ -468,7 +474,7 @@
         #courseTagline ul li {
             margin: 0px;
             padding: 0px;
-            font-size: 11pt;
+            font-size: 12pt !important;
             text-align: start;
             font-weight: 500;
             line-height: normal;
@@ -709,7 +715,7 @@
             width: 100%;
             border-radius: 6px !important;
             padding: 14px 28px !important;
-            font-size: 10pt !important;
+            font-size: 12pt !important;
         }
 
         .coursePricing .pricing div {
@@ -799,6 +805,12 @@
 
         /* all courses area customization */
 
+        .is-container.container.packageCourses {
+            max-width: 1150px !important;
+            margin-top: 0px !important;
+            margin-bottom: 0px !important;
+        }
+
         .packageCourseslist .column.third {
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             padding: 3px;
@@ -814,9 +826,9 @@
         }
 
         .packageCourseslist .column.third a {
-            font-size: 11pt !important;
+            font-size: 11.5pt !important;
             line-height: normal !important;
-            font-weight: 500 !important;
+            font-weight: 600 !important;
             vertical-align: text-top;
             text-transform: capitalize;
             font-family: cursive;
@@ -871,7 +883,7 @@
             max-width: max-content !important;
             vertical-align: middle;
             margin: 5px auto;
-            font-size: 10pt !important;
+            font-size: 12pt !important;
         }
 
         button.demoClass:hover {
@@ -936,7 +948,7 @@
                 height: 315px !important;
             }
         }
-    </style>    
+    </style>
 
 
 
