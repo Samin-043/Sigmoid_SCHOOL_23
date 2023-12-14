@@ -1,6 +1,14 @@
 
 <--------    package course update needed this html ----->
 
+//only exceptional feature section
+......lines added = ? Courses In 1 Package....
+
+
+
+
+
+
 follow tgis package course = সকল বিশ্ববিদ্যালয় প্রশ্নব্যাংক (2022-23 থেকে 2009-10)
 
   <!-- course review -->
