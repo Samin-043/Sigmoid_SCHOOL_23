@@ -6,6 +6,67 @@
 
 
 
+  /* coursePricing */
+        @media (max-width: 768px) {
+
+            .pricing .cartBtns .btn.btn-primary {
+                border-radius: 50px !important;
+                padding: 14px 28px !important;
+            }
+
+            .bodySection {
+                position: relative;
+            }
+
+            .coursePricing {
+                display: block;
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                z-index: 99;
+                box-shadow: -1px -11px 42px 0 rgba(0, 0, 0, .1);
+                padding: 5px 5px;
+                background-color: aliceblue;
+            }
+
+            .coursePricing .cartBtns {
+                width: 100%;
+            }
+
+            .is-container {
+                z-index: initial;
+            }
+        }
+
+
+
+
+
+
+
+/*updated need for for footer styles*/
+        .bg-dark {
+            --bs-info-rgb: 50, 20, 50;
+            --bs-bg-opacity: 1;
+            background-color: rgba(var(--bs-info-rgb), var(--bs-bg-opacity)) !important;
+        }
+
+        footer .socialIcons {
+            text-align: right;
+        }
+
+        @media (max-width:768px) {
+            footer .socialIcons {
+                text-align: center;
+            }
+        }
+
+
+
+
+
+
 
 
 

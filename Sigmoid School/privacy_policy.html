@@ -11,8 +11,9 @@
 
 <body>
 
-    <div id="1682859565107d" data-cat="1" class="is-section is-light-text is-box is-align-center is-section-50" style="background-color: #213048b8;">
-        
+    <div id="1682859565107d" data-cat="1" class="is-section is-light-text is-box is-align-center is-section-50"
+        style="background-color: #213048b8;">
+
         <div class="is-boxes">
             <div class="is-box-centered">
                 <div class="is-container container">
@@ -296,7 +297,7 @@
                                 style="margin-top: 0px; line-height: normal; text-align: left; margin: 0rem; padding: 0rem; margin-left: 20px; margin-right: 20px; letter-spacing: 0px; font-size: 17px; font-family: Arial, sans-serif;">
                                 We may employ third-party companies and individuals due to the following reasons:<br>
                             </p>
-                            <ul class="m-0 p-0 pt-1 pb-1"> 
+                            <ul class="m-0 p-0 pt-1 pb-1">
                                 <li class="TermsConditionDescriptions_description__UON8o TermsConditionDescriptions_list_description__t5XHF"
                                     style="font-size: 17px; line-height: 1; margin-left: 20px; margin-right: 20px; font-family: Arial, sans-serif;">
                                     To facilitate our Service</li>
@@ -473,7 +474,7 @@
 
         body *:not([class*=icon], [class*=fa]) {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            
+
         }
 
         .privacy-content li {
@@ -482,6 +483,23 @@
             line-height: 1.6;
             color: rgb(4, 3, 57);
             letter-spacing: 0.16px;
+        }
+
+        /*updated need for for footer styles*/
+        .bg-dark {
+            --bs-info-rgb: 50, 20, 50;
+            --bs-bg-opacity: 1;
+            background-color: rgba(var(--bs-info-rgb), var(--bs-bg-opacity)) !important;
+        }
+
+        footer .socialIcons {
+            text-align: right;
+        }
+
+        @media (max-width:768px) {
+            footer .socialIcons {
+                text-align: center;
+            }
         }
     </style>
 

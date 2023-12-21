@@ -13,7 +13,7 @@
 <body>
 
     <div id="1683065921847d" data-cat="1" class="is-section is-light-text is-box is-section-50"
-        style="background: radial-gradient(99.87% 413.14% at 0 4.98%, rgb(97 112 194) 0, #808080 26.56%, #3a669a 100%)">
+        style="background:  #3a669a">
         <div class="is-overlay">
             <div class="is-overlay-content"></div>
         </div>
@@ -47,7 +47,7 @@
                                 ABOUT US
                             </a>
                         </div>
-                        
+
                         <!-- <div class="col py-2 exploreCourseClass mx-auto">
                             <a href="/aboutus" id="exploreCourse" class="mx-auto" draggable="false" title=""
                                 style="text-decoration: none; color: #fff; text-align: center; width: 300px;">
@@ -325,6 +325,24 @@
             text-decoration: none;
             font-size: 20px;
             font-weight: 500;
+        }
+
+
+        /*updated need for for footer styles*/
+        .bg-dark {
+            --bs-info-rgb: 50, 20, 50;
+            --bs-bg-opacity: 1;
+            background-color: rgba(var(--bs-info-rgb), var(--bs-bg-opacity)) !important;
+        }
+
+        footer .socialIcons {
+            text-align: right;
+        }
+
+        @media (max-width:768px) {
+            footer .socialIcons {
+                text-align: center;
+            }
         }
     </style>
 

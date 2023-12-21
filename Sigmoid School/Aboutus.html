@@ -18,8 +18,9 @@
             <div class="card-body">
                 <div class="card border-0 bg-transparent">
                     <div class="card-body m-auto">
-                        <h1 class="m-auto"
-                            style="text-align: center; font-weight: 600;  color:#fffdfd; margin-left: 0px;">
+                        <h1 class="m-auto" style="text-align: center; font-weight: 600;  color:#fffdfd; margin-left: 0px; padding: 60px 0px !important;
+                            vertical-align: middle;
+                            line-height: normal;">
                             Learning is the only way to create your future career.
                         </h1>
                     </div>
@@ -34,23 +35,24 @@
             <div class="is-box-centered">
                 <div class="is-container container" style="max-width: 1020px; margin-top: 0px; margin-bottom: 0px;">
                     <div class="card border-0">
-                        <div class="card-body p-0 pt-2">
+                        <div class="card-body p-0">
                             <p
-                                style=" font-size: 20px; float: left; border-color: rgba(40, 53, 147, 0.95); height: 50px; background-color: rgba(69, 39, 160, 0.89); width: 1%;">
+                                style=" font-size: 28px !important; float: left; border-color: rgba(40, 53, 147, 0.95); height: 28px !important; background-color: rgba(69, 39, 160, 0.89); width: 1%;">
                             </p>
                             <h2 style="text-align: left; font-weight: 400; color: rgb(0, 0, 0); line-height: normal 1;  font-size: 40px; letter-spacing: normal;"
                                 class="ms-2">&nbsp;About Sigmoid School</h2>
                         </div>
 
                         <div class="card border-0">
-                            <div class="card-body p-0 pt-2">
+                            <div class="card-body p-0">
                                 <h2
                                     style="text-align: left; font-size: 18px; font-weight: 900; color: rgb(0, 0, 0); line-height: normal 0;">
                                     <span
                                         style=" font-weight: 800; line-height: normal 1; font-size: 36px; letter-spacing: normal;">Know
-                                        more about Sigmoid School</span><br></h2>
+                                        more about Sigmoid School</span><br>
+                                </h2>
                             </div>
-                        </div>  
+                        </div>
 
 
                         <div class="card border-0">
@@ -145,6 +147,43 @@
         .platformTractionDetails .col {
             padding: 10px;
             text-align: center;
+        }
+
+
+        h1 {
+            font-size: 36px !important;
+            line-height: normal;
+        }
+
+        h2,
+        span {
+            font-size: 28px !important;
+            line-height: normal;
+        }
+
+
+        p {
+            font-size: 0.9rem !important;
+            line-height: normal;
+        }
+
+
+
+        /*updated need for for footer styles*/
+        .bg-dark {
+            --bs-info-rgb: 50, 20, 50;
+            --bs-bg-opacity: 1;
+            background-color: rgba(var(--bs-info-rgb), var(--bs-bg-opacity)) !important;
+        }
+
+        footer .socialIcons {
+            text-align: right;
+        }
+
+        @media (max-width:768px) {
+            footer .socialIcons {
+                text-align: center;
+            }
         }
     </style>
 
