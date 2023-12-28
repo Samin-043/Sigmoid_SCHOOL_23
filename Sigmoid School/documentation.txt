@@ -1,4 +1,24 @@
 
+
+
+/* for live course/package */
+        .imageLiveSection {
+            width: 80px;
+            height: 80px;
+            margin: 0px auto !important;
+            background-color: inherit !important;
+        }
+
+        .imageLiveSection img {
+            width: 100%;
+            height: 100%;
+            background-color: inherit !important;
+            flex-shrink: 0;
+        }
+
+        
+
+
 <--------    package course update needed this html ----->
 
 //only exceptional feature section
