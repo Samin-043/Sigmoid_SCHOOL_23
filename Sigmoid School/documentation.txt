@@ -1,6 +1,14 @@
 
 
 
+.......updated from admin panel of sigmoid school settings section
+#singleCourseId{
+   padding: 0px 10px !important;
+}
+
+
+
+
 /* for live course/package */
         .imageLiveSection {
             width: 80px;

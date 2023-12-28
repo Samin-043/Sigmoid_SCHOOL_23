@@ -82,7 +82,7 @@
                                                 <p class="my-auto"
                                                     style=" line-height: normal; font-size: 0.7rem; font-weight: 500; color: #3b3b3bab;">
                                                     Assistant Professor, <strong>Govt Science College</strong>
-                                                
+
                                                     <!-- <span class="my-0"
                                                             style="line-height: normal; font-size: 0.7rem; font-weight: 500; color: #3b3b3bab; text-transform: capitalize;">Education,
                                                             31st
@@ -99,13 +99,32 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
+                            <style>
+                                /* instructor_image_styles */
+                                .customImageOutlayer {
+                                    height: 70px !important;
+                                    width: 70px !important;
+                                    border-radius: 50%;
+                                    position: relative;
+                                    flex-shrink: 0;
+                                    overflow: hidden;
+                                    align-items: center;
+                                    margin: 5px;
+                                }
+
+                                .customImageOutlayer img {
+                                    flex-shrink: 0;
+                                }
+                            </style>
+                        </div>
+
+
+                    </div>
 
                     <!-- course Price & course poster section -->
                     <div class="col-lg-4 col-md-5 col-sm-12 card p-1 pb-0 h-100" style=" border-radius: 8px;
-                    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+                      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
 
                         <img id="courseImage" alt="courseImage" data-src="/resources/images/cc1.jpg" width="100%"
                             src="/resources/images/cc1.jpg">
@@ -113,11 +132,16 @@
                             {{PRICING}}
                         </div>
 
+
+
+
                         <div class="card-body p-1" id="courseTagline">
                             <p class="m-0 p-0 mt-1" style="color:rgb(0 21 138) ;">
                                 {{TAGLINE}}</p>
                         </div>
+
                     </div>
+
                 </div>
             </div>
         </div>
@@ -215,6 +239,89 @@
                     </div>
                 </div>
             </div>
+
+
+            <style>
+                .colFeatureSection .card {
+                    background-color: rgb(56 189 248 /79%);
+                    color: #fcfbfb;
+                }
+
+                .featureSection {
+                    transition: transform 0.3s ease-in-out;
+                }
+
+                .featureSection:hover {
+                    cursor: pointer;
+                    /* background-color: green; */
+                    transform: scale(1.05);
+                    text-transform: capitalize;
+                    z-index: 100000;
+                }
+
+                .platformfeature {
+                    transition: transform 0.3s ease-in-out;
+                }
+
+                .platformfeature:hover {
+                    cursor: pointer;
+                    /* background-color: green; */
+                    background-color: color(prophoto-rgb 0.51 0.75 0.73);
+                    color: #fcfbfb;
+                    box-shadow: rgb(77, 38, 72) 20px 20px 30px 8px;
+                    text-transform: capitalize;
+                    transform: scale(1.05);
+                    z-index: 100000;
+                }
+
+                .btnDarkCustom {
+                    color: #212529;
+                    border-color: #212529;
+                    background: #fff;
+                    padding: 0.3rem;
+                    border-radius: 8px;
+                }
+
+                .btnDarkCustom:hover {
+                    color: #fff;
+                    background: #212529;
+                    border-color: #212529;
+                    border-radius: 8px;
+                    padding: 0.3rem;
+                    font-weight: 600;
+                }
+
+
+                .btnPrimaryCustom {
+                    color: #0d6efd;
+                    border-color: #0d6efd;
+                    background: #fff;
+                    padding: 0.3rem;
+                    border-radius: 8px;
+                }
+
+                .btnPrimaryCustom:hover {
+                    color: #0d6efd;
+                    color: #fff;
+                    background: #0d6efd;
+                    border-color: #0d6efd;
+                    border-radius: 8px;
+                    padding: 0.3rem;
+                    font-weight: 600;
+                }
+
+
+                .colFeatureSection {
+                    padding-top: 0.3rem;
+                    padding-bottom: 0.3rem;
+                }
+
+                .colPlatformFeature {
+                    padding-top: 0.3rem;
+                    padding-bottom: 0.3rem;
+                }
+            </style>
+
         </div>
 
 
@@ -276,6 +383,8 @@ border-radius: 8px;">
     </div>
 
 
+
+
     <style>
         body *:not([class*=icon], [class*=fa]) {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -286,13 +395,118 @@ border-radius: 8px;">
             margin: 0;
         }
 
+        .is-wrapper .is-dark-text * {
+            color: rgb(1 1 16);
+        }
+
+
         .landingSection img {
             border-radius: 8px;
         }
 
+
+
+        /* user review styles */
+
         .is-box#createCustomReview {
             background-color: #f5f5f500;
         }
+
+        .is-box#createCustomReview .textarea-cont {
+            background-color: rgb(15 23 42);
+        }
+
+        .is-box#createCustomReview .textarea-cont #reviewText {
+            color: #fff;
+        }
+
+
+
+        .accordion-syllabus-header {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 0.2em;
+            background: #fcfbfb;
+            box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+            border-radius: 6px;
+            padding: 1rem;
+            position: relative;
+        }
+
+        @media (max-width:601px) {
+            .landingSection {
+                flex-direction: column-reverse;
+            }
+        }
+
+        #courseDetails p {
+            margin: 0px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            text-align: start;
+            font-weight: 500;
+            line-height: normal;
+            color: rgb(1 1 16);
+        }
+
+
+        .courseDetailsSection table tbody tr {
+            padding: 5px;
+            margin: 0px;
+            line-height: normal;
+        }
+
+        .courseDetailsSection table {
+            width: 100%;
+        }
+
+        /* 
+        .courseDetailsSection table tbody tr th {} */
+
+
+        .courseDetailsSection table tbody tr td {
+            padding: 3pt;
+            margin: 0px;
+            font-size: 12pt;
+            font-weight: 500;
+            line-height: 20pt;
+            color: rgb(1 1 16);
+            border-style: solid;
+            border-width: 1px;
+            text-align: center;
+            border-color: rgb(2, 42, 82);
+        }
+
+
+        #courseDescriptionArea button {
+            font-size: 0.9rem;
+            line-height: normal;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+
+        .courseDetailsSection table tbody tr:first-child {
+            background-color: rgb(207, 226, 243);
+            font-weight: 600;
+            font-size: 10pt;
+            text-align: start;
+            vertical-align: middle;
+        }
+
+
+        #courseDescriptionArea {
+            overflow-x: auto;
+        }
+
+        /* course description scroll behabiour when mobile screen size to show all elements perfectly */
+        /* @media (max-width:425px) {
+            #courseDescriptionArea {
+                width: 100%;
+                max-width: 280px;
+                margin: auto;
+            }
+        } */
+
 
 
         #courseTitle {
@@ -303,39 +517,18 @@ border-radius: 8px;">
             text-align: left;
         }
 
-
-        @media (max-width:601px) {
-            .landingSection {
-                flex-direction: column-reverse;
-            }
-        }
-
-        .my-auto {
-            margin-top: auto !important;
-            margin-bottom: auto !important;
-        }
-
+        /* instructor_image_styles */
         .customImageOutlayer {
-
-            height: 85px !important;
-            width: 85px !important;
+            height: 70px !important;
+            width: 70px !important;
             border-radius: 50%;
+            position: relative;
             flex-shrink: 0;
             overflow: hidden;
-            position: relative;
-            font-size: 1.25rem;
             align-items: center;
+            margin: 5px;
         }
 
-        #courseDetails p {
-            letter-spacing: normal;
-            color: rgb(0, 0, 0);
-            font-family: Arial, sans-serif;
-            font-weight: 400;
-            font-size: 0.9rem;
-            line-height: normal;
-            text-align: left;
-        }
 
 
         /*course curriculam custom extra css */
@@ -427,105 +620,6 @@ border-radius: 8px;">
 
 
 
-
-
-        /* instructor_image_styles */
-        .customImageOutlayer {
-            height: 70px !important;
-            width: 70px !important;
-            border-radius: 50%;
-            position: relative;
-            flex-shrink: 0;
-            overflow: hidden;
-            align-items: center;
-            margin: 5px;
-        }
-
-        .customImageOutlayer img {
-            flex-shrink: 0;
-        }
-
-
-        .colFeatureSection .card {
-            background-color: rgb(56 189 248 /79%);
-            color: #fcfbfb;
-        }
-
-        .featureSection {
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .featureSection:hover {
-            cursor: pointer;
-            /* background-color: green; */
-            transform: scale(1.05);
-            text-transform: capitalize;
-            z-index: 100000;
-        }
-
-        .platformfeature {
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .platformfeature:hover {
-            cursor: pointer;
-            /* background-color: green; */
-            background-color: color(prophoto-rgb 0.51 0.75 0.73);
-            color: #fcfbfb;
-            box-shadow: rgb(77, 38, 72) 20px 20px 30px 8px;
-            text-transform: capitalize;
-            transform: scale(1.05);
-            z-index: 100000;
-        }
-
-        .btnDarkCustom {
-            color: #212529;
-            border-color: #212529;
-            background: #fff;
-            padding: 0.3rem;
-            border-radius: 8px;
-        }
-
-        .btnDarkCustom:hover {
-            color: #fff;
-            background: #212529;
-            border-color: #212529;
-            border-radius: 8px;
-            padding: 0.3rem;
-            font-weight: 600;
-        }
-
-
-        .btnPrimaryCustom {
-            color: #0d6efd;
-            border-color: #0d6efd;
-            background: #fff;
-            padding: 0.3rem;
-            border-radius: 8px;
-        }
-
-        .btnPrimaryCustom:hover {
-            color: #0d6efd;
-            color: #fff;
-            background: #0d6efd;
-            border-color: #0d6efd;
-            border-radius: 8px;
-            padding: 0.3rem;
-            font-weight: 600;
-        }
-
-
-        .colFeatureSection {
-            padding-top: 0.3rem;
-            padding-bottom: 0.3rem;
-        }
-
-        .colPlatformFeature {
-            padding-top: 0.3rem;
-            padding-bottom: 0.3rem;
-        }
-
-
         /* upadated to show promo code */
         .toast:not(.show) {
             display: inline-flex;
@@ -540,6 +634,13 @@ border-radius: 8px;">
                 margin-top: 10px;
             }
         }
+
+        .imageSection {
+            height: 60px;
+            width: 60px;
+            flex-shrink: 0;
+        }
+
 
 
         /* tagline update */
@@ -568,21 +669,6 @@ border-radius: 8px;">
             color: rgb(1 1 16);
         }
 
-        /* user review styles */
-
-        .is-box#createCustomReview {
-            background-color: #f5f5f500;
-        }
-
-        .is-box#createCustomReview .textarea-cont {
-            background-color: rgb(15 23 42);
-        }
-
-        .is-box#createCustomReview .textarea-cont #reviewText {
-            color: #fff;
-        }
-
-
 
         /* list styles */
 
@@ -594,6 +680,63 @@ border-radius: 8px;">
 
         ::marker {
             color: #2196F3;
+        }
+
+
+        /* li {
+            list-style-type: "✓";
+            padding-left: 1px;
+        }
+
+        ::marker {
+            color: crimson;
+        } */
+
+
+        /* button updated */
+        button.descriptionBtn {
+            border-radius: 6px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background-color: rgb(248 250 252);
+            color: rgb(15 23 42);
+            border-color: rgb(30 64 175);
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        button.descriptionBtn:hover {
+            border-radius: 6px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background-color: rgb(248 250 252);
+            color: rgb(11, 18, 34);
+            border-color: rgb(80, 33, 150);
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+
+
+
+        .courseDescription {
+            height: 60px;
+            overflow-y: hidden;
+        }
+
+
+        #homePageBackground {
+            background-color: rgb(255 255 255);
+            background-image: url(https://res.cloudinary.com/pioneer-alpha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1699467090/Sigmoid%20School%28Website%29/Course%20Background%20Image/new_edited_Sigmoid_School-Course_Background-01_1_xkwgtj.jpg?_s=public-apps);
+            background-position: inherit;
+            background-attachment: inherit;
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 100%;
         }
 
 
@@ -612,8 +755,15 @@ border-radius: 8px;">
         }
 
 
+
+
         /* coursePricing */
         @media (max-width: 768px) {
+
+            .pricing .cartBtns .btn.btn-primary {
+                border-radius: 50px !important;
+                padding: 14px 28px !important;
+            }
 
             .bodySection {
                 position: relative;
@@ -641,47 +791,6 @@ border-radius: 8px;">
         }
 
 
-
-
-        #homePageBackground {
-            background-color: rgb(255 255 255);
-            background-image: url(https://res.cloudinary.com/pioneer-alpha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1699467090/Sigmoid%20School%28Website%29/Course%20Background%20Image/new_edited_Sigmoid_School-Course_Background-01_1_xkwgtj.jpg?_s=public-apps);
-            background-position: inherit;
-            background-attachment: inherit;
-            background-size: contain;
-            background-repeat: no-repeat;
-            width: 100%;
-        }
-
-
-
-        /* coursePricing */
-        @media (max-width: 768px) {
-
-            .bodySection {
-                position: relative;
-            }
-
-            .coursePricing {
-                display: block;
-                position: fixed;
-                bottom: 0;
-                right: 0;
-                left: 0;
-                z-index: 99;
-                box-shadow: -1px -11px 42px 0 rgba(0, 0, 0, .1);
-                padding: 5px 5px;
-                background-color: aliceblue;
-            }
-
-            .coursePricing .cartBtns {
-                width: 100%;
-            }
-
-            .is-container {
-                z-index: initial;
-            }
-        }
 
         /* benefitSectionStyles */
         .benefitFromCourse .imageSection {
@@ -706,7 +815,6 @@ border-radius: 8px;">
         }
 
 
-
         /*updated need for for footer styles*/
         .bg-dark {
             --bs-info-rgb: 50, 20, 50;
@@ -725,9 +833,13 @@ border-radius: 8px;">
         }
     </style>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
-        </script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
 
 </body>
 
