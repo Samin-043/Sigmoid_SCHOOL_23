@@ -29,7 +29,15 @@
                                         {{TITLE}}
                                     </h1>
 
+                                    <div class="card border-0 bg-transparent">
+                                        <div class="card-body px-0">
+                                            <a href="#packageContents" target="_parent" class="fullDetailsCourseMenu">
+                                                কোর্স সম্পর্কে বিস্তারিত জানতে এখানে দেখুন
+                                            </a>
+                                        </div>
+                                    </div>
 
+                                    
 
                                     <!-- Course Description -->
                                     <h1 id="curriculumTitle"
@@ -48,6 +56,9 @@
                                                     style="font-size: 16px;">
                                                     {{DESCRIPTION}}
                                                 </h3>
+
+
+
 
                                                 <!-- course features -->
                                                 <div class="card bg-transparent border-0 m-0 my-2 courseFeatures">
@@ -371,6 +382,7 @@
                                                     src="https://res.cloudinary.com/pioneer-alpha/image/upload/v1703752548/Sigmoid%20School%28Website%29/Package%20Course/buy_now_msowho.gif">
 
                                             </div>
+
                                             <h3>প্যাকেজ টি কিভাবে কিনবো দেখুন এই লিংক এ
 
                                                 <!-- Button trigger modal -->
@@ -1148,6 +1160,29 @@
             padding: 10px 0px !important;
             border-radius: 6px;
             background: rgb(15 23 42) !important;
+        }
+
+
+        #curriculumTitle {
+            display: none !important;
+        }
+
+        a.fullDetailsCourseMenu {
+            background-color: rgb(15 23 42);
+            color: #f9fafc !important;
+            text-decoration: none;
+            border-radius: 6px !important;
+            padding: 15px 5px !important;
+            font-size: 8.5pt !important;
+            font-weight: 600 !important;
+            cursor: pointer;
+            animation: 5s infinite backgroundChange;
+        }
+
+        @keyframes backgroundChange {
+            50% {
+                background-color: #2196F3;
+            }
         }
     </style>
 
