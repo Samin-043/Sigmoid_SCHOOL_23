@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .ritz .waffle a {
+            color: inherit;
+        }
+
+        .ritz .waffle .s5 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #ffffff;
+            text-align: center;
+            color: #000000;
+            font-family: 'docs-Calibri', Arial;
+            font-size: 11pt;
+            vertical-align: middle;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s7 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #ffffff;
+            text-align: center;
+            color: #000000;
+            font-family: 'docs-Calibri', Arial;
+            font-size: 10pt;
+            vertical-align: bottom;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s9 {
+            background-color: #ffffff;
+            text-align: center;
+            color: #000000;
+            font-family: 'docs-Calibri', Arial;
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s14 {
+            background-color: #00ffff;
+            text-align: center;
+            color: #000000;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: bottom;
+            white-space: nowrap;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s8 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #ffffff;
+            text-align: center;
+            color: #000000;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: bottom;
+            white-space: nowrap;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s0 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #ffffff;
+            text-align: center;
+            font-weight: bold;
+            color: #000000;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s11 {
+            background-color: #ffffff;
+            text-align: center;
+            color: #000000;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s10 {
+            background-color: #ffffff;
+            text-align: center;
+            color: #000000;
+            font-family: 'docs-Calibri', Arial;
+            font-size: 10pt;
+            vertical-align: bottom;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s13 {
+            background-color: #ffffff;
+            text-align: center;
+            color: #000000;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: bottom;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s15 {
+            background-color: #00ff00;
+            text-align: center;
+            color: #000000;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: bottom;
+            white-space: nowrap;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s6 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #ffffff;
+            text-align: center;
+            color: #000000;
+            font-family: 'docs-Calibri', Arial;
+            font-size: 11pt;
+            vertical-align: bottom;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s1 {
+            background-color: #ffffff;
+            text-align: center;
+            color: #000000;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: bottom;
+            white-space: nowrap;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s2 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #ffffff;
+            text-align: center;
+            color: #000000;
+            font-family: 'docs-Calibri', Arial;
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s4 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #ffffff;
+            text-align: left;
+            color: #000000;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: bottom;
+            white-space: nowrap;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s3 {
+            border-bottom: 1px SOLID #000000;
+            border-right: 1px SOLID #000000;
+            background-color: #ffffff;
+            text-align: center;
+            color: #000000;
+            font-family: 'Arial';
+            font-size: 10pt;
+            vertical-align: middle;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+
+        .ritz .waffle .s12 {
+            background-color: #ffffff;
+            text-align: center;
+            color: #000000;
+            font-family: 'docs-Calibri', Arial;
+            font-size: 11pt;
+            vertical-align: bottom;
+            white-space: normal;
+            overflow: hidden;
+            word-wrap: break-word;
+            direction: ltr;
+            padding: 2px 3px 2px 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ritz grid-container" dir="ltr">
+        <table class="waffle border-1" cellspacing="0" cellpadding="0">
+            <thead 
+                style="border: 1px solid #00ffff; 
+                background-color: rgb(165, 197, 255);"
+            >
+                <tr>
+                    <th id="0C0" style="width:100px;" class="column-headers-background">Day Count</th>
+                    <th id="0C1" style="width:100px;" class="column-headers-background">Exam Number</th>
+                    <th id="0C2" style="width:100px;" class="column-headers-background">Calender Date</th>
+                    <th id="0C3" style="width:230px;" class="column-headers-background">Exam Title</th>
+                    <th id="0C4" style="width:165px;" class="column-headers-background">Subject</th>
+                    <th id="0C5" style="width:100px;" class="column-headers-background">Syllabus</th>
+                    <th id="0C6" style="width:100px;" class="column-headers-background">Total MCQs</th>
+                    <th id="0C7" style="width:100px;" class="column-headers-background">Time Limit</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                
+                <tr style="height: 20px">
+                   
+                    <td class="s2" dir="ltr">1</td>
+                    <td class="s2" dir="ltr">1</td>
+                    <td class="s3" dir="ltr">January - 20</td>
+                    <td class="s2" dir="ltr">Physics - 1 (Medical-24)</td>
+                    <td class="s2" dir="ltr"></td>
+                    <td class="s2" dir="ltr">Full</td>
+                    <td class="s2" dir="ltr">50</td>
+                    <td class="s2" dir="ltr">30 min</td>
+
+
+                </tr>
+                <tr style="height: 20px">
+                   
+                    <td class="s2" dir="ltr">2</td>
+                    <td class="s2" dir="ltr">2</td>
+                    <td class="s3" dir="ltr">January - 21</td>
+                    <td class="s2" dir="ltr">Chemistry - 1 (Medical-24)</td>
+                    <td class="s2" dir="ltr"></td>
+                    <td class="s2" dir="ltr">Full</td>
+                    <td class="s2" dir="ltr">50</td>
+                    <td class="s2" dir="ltr">30 min</td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </tr>
+                <tr style="height: 20px">
+                    
+                    
+                    <td class="s2" dir="ltr">3</td>
+                    <td class="s2" dir="ltr">3</td>
+                    <td class="s3" dir="ltr">January - 22</td>
+                    <td class="s2" dir="ltr">Biology - 1 (Medical-24)</td>
+                    <td class="s4"></td>
+                    <td class="s2" dir="ltr">Full</td>
+                    <td class="s2" dir="ltr">50</td>
+                    <td class="s2" dir="ltr">30 min</td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </tr>
+                <tr style="height: 20px">
+                   
+                    <td class="s2" dir="ltr">4</td>
+                    <td class="s2" dir="ltr">4</td>
+                    <td class="s3" dir="ltr">January - 23</td>
+                    <td class="s5" dir="ltr">English -1 (Medical-24)</td>
+                    <td class="s5" dir="ltr"></td>
+                    <td class="s2" dir="ltr">Full</td>
+                    <td class="s2" dir="ltr">50</td>
+                    <td class="s2" dir="ltr">30 min</td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </tr>
+                <tr style="height: 20px">
+                    
+                    <td class="s2" dir="ltr">5</td>
+                    <td class="s2" dir="ltr">5</td>
+                    <td class="s3" dir="ltr">January - 24</td>
+                    <td class="s2" dir="ltr">GK - 1 (Medical-24)</td>
+                    <td class="s2" dir="ltr"></td>
+                    <td class="s2" dir="ltr">Full</td>
+                    <td class="s2" dir="ltr">50</td>
+                    <td class="s2" dir="ltr">30 min</td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </tr>
+                <tr style="height: 20px">
+                   
+                    <td class="s2" dir="ltr">6</td>
+                    <td class="s2" dir="ltr">6</td>
+                    <td class="s3" dir="ltr">January - 25</td>
+                    <td class="s2" dir="ltr">Physics - 2 (Medical-24)</td>
+                    <td class="s2" dir="ltr"></td>
+                    <td class="s2" dir="ltr">Full</td>
+                    <td class="s2" dir="ltr">50</td>
+                    <td class="s2" dir="ltr">30 min</td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </tr>
+                <tr style="height: 20px">
+                   
+                    <td class="s2" dir="ltr">7</td>
+                    <td class="s2" dir="ltr">7</td>
+                    <td class="s3" dir="ltr">January - 26</td>
+                    <td class="s2" dir="ltr">Chemistry - 2 (Medical-24)</td>
+                    <td class="s2" dir="ltr"></td>
+                    <td class="s2" dir="ltr">Full</td>
+                    <td class="s2" dir="ltr">50</td>
+                    <td class="s2" dir="ltr">30 min</td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </tr>
+                <tr style="height: 20px">
+                   
+                    <td class="s2" dir="ltr">8</td>
+                    <td class="s2" dir="ltr">8</td>
+                    <td class="s3" dir="ltr">January - 27</td>
+                    <td class="s2" dir="ltr">Biology - 2 (Medical-24)</td>
+                    <td class="s2" dir="ltr"></td>
+                    <td class="s2" dir="ltr">Full</td>
+                    <td class="s2" dir="ltr">50</td>
+                    <td class="s2" dir="ltr">30 min</td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </tr>
+                <tr style="height: 20px">
+                   
+                    <td class="s2" dir="ltr">9</td>
+                    <td class="s2" dir="ltr">9</td>
+                    <td class="s3" dir="ltr">January - 28</td>
+                    <td class="s5" dir="ltr">English -2 (Medical-24)</td>
+                    <td class="s5" dir="ltr"></td>
+                    <td class="s2" dir="ltr">Full</td>
+                    <td class="s2" dir="ltr">50</td>
+                    <td class="s2" dir="ltr">30 min</td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </tr>
+                <tr style="height: 20px">
+                   
+                    <td class="s2" dir="ltr">10</td>
+                    <td class="s2" dir="ltr">10</td>
+                    <td class="s3" dir="ltr">January - 29</td>
+                    <td class="s2" dir="ltr">GK - 2 (Medical-24)</td>
+                    <td class="s2" dir="ltr"></td>
+                    <td class="s2" dir="ltr">Full</td>
+                    <td class="s2" dir="ltr">50</td>
+                    <td class="s2" dir="ltr">30 min</td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </tr>
+                <tr style="height: 20px">
+                   
+                    <td class="s2" dir="ltr">11</td>
+                    <td class="s2" dir="ltr">11</td>
+                    <td class="s3" dir="ltr">January - 30</td>
+                    <td class="s6" dir="ltr">Model Test - 1 (Medical-24)</td>
+                    <td class="s6"></td>
+                    <td class="s2" dir="ltr">Full</td>
+                    <td class="s7" dir="ltr">100</td>
+                    <td class="s7" dir="ltr">1h</td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </tr>
+                <tr style="height: 20px">
+                   
+                    <td class="s2" dir="ltr">12</td>
+                    <td class="s2" dir="ltr">12</td>
+                    <td class="s3" dir="ltr">January - 31</td>
+                    <td class="s6" dir="ltr">Model Test - 2 (Medical-24)</td>
+                    <td class="s7"></td>
+                    <td class="s2" dir="ltr">Full</td>
+                    <td class="s7" dir="ltr">100</td>
+                    <td class="s7" dir="ltr">1h</td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </tr>
+                <tr style="height: 20px">
+                    
+                    <td class="s2" dir="ltr">13</td>
+                    <td class="s2" dir="ltr">13</td>
+                    <td class="s3" dir="ltr">February - 01</td>
+                    <td class="s6" dir="ltr">Model Test - 3 (Medical-24)</td>
+                    <td class="s8"></td>
+                    <td class="s2" dir="ltr">Full</td>
+                    <td class="s7" dir="ltr">100</td>
+                    <td class="s7" dir="ltr">1h</td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </tr>
+                <tr style="height: 20px">
+                    
+                    <td class="s2" dir="ltr">14</td>
+                    <td class="s2" dir="ltr">14</td>
+                    <td class="s3" dir="ltr">February - 02</td>
+                    <td class="s6" dir="ltr">Model Test - 4 (Medical-24)</td>
+                    <td class="s6"></td>
+                    <td class="s2" dir="ltr">Full</td>
+                    <td class="s7" dir="ltr">100</td>
+                    <td class="s7" dir="ltr">1h</td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </tr>
+                <tr style="height: 20px">
+                   
+                    <td class="s2" dir="ltr">15</td>
+                    <td class="s2" dir="ltr">15</td>
+                    <td class="s3" dir="ltr">February - 03</td>
+                    <td class="s6" dir="ltr">Model Test - 5 (Medical-24)</td>
+                    <td class="s7"></td>
+                    <td class="s2" dir="ltr">Full</td>
+                    <td class="s7" dir="ltr">100</td>
+                    <td class="s7" dir="ltr">1h</td>
+
+                </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
