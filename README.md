@@ -5,7 +5,8 @@
 Default Single Course Page design
 
 ## Header Navbar Updated
- .header .navbar {
+
+        .header .navbar {
             min-height: 55px !important;
             padding: 5px 0px !important;
         }
@@ -25,5 +26,5 @@ Default Single Course Page design
             }
 
         }
-        
+
 
