@@ -15,8 +15,8 @@
             let btn = document.getElementById('descriptionDetails');
 
 
-            if (doc.style.height === "60px") {
-                parentSectionId.style.height = "240px";
+            if (doc.style.height === "120px") {
+                parentSectionId.style.height = "500px";
                 doc.style.height = "100%";
                 doc.style.overflowY = "scroll";
                 btn.style.display = "none";
@@ -34,39 +34,54 @@
             <!-- landing Section -->
             <div data-cat="52" class="is-section is-box" id="1692060009769">
                 <div class="is-container container" id="singleCourseId">
+
+
+                    <div class="card border-0 bg-transparent">
+                        <div class="card-body p-0 m-auto" style="
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 0px 5px !important;
+    line-height: normal !important;
+                            ">
+                            <h1 class="pt-1 m-0" style="    font-size: 30px !important;
+                                font-weight: 700;
+                                color: rgb(37 99 235);
+                                line-height: normal !important;">
+                                {{TITLE}}
+                            </h1>
+                        </div>
+                    </div>
+
                     <div class="row landingSection">
                         <div class="col-lg-8 col-md-7 col-sm-12">
                             <div class="card bg-transparent border-0 m-0">
                                 <div class="card-body p-0">
-                                    <h1 class="pt-1 m-0"
-                                        style="font-size: 24pt; font-weight: 700; color: rgb(10, 9, 89); line-height: normal;">
-                                        {{TITLE}}
-                                    </h1>
-
-
 
                                     <!-- Course Description -->
                                     <div class="card my-2 py-2" id="mainDescription"
-                                        style=" border: 4px; height: 180px; overflow: scroll; scrollbar-width: thin ; box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;">
-
-                                        <h1 class="px-3"
-                                            style="color : rgb(1 1 16); font-size: 24px; font-weight: 700; line-height: normal; ">
-                                            প্যাকেজ কোর্স নিয়ে বিস্তারিত
-                                        </h1>
+                                        style="border: 4px; height: 250px; overflow: scroll; scrollbar-width: thin ; box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;">
                                         <div class="card-body p-0">
 
                                             <div class="card bg-transparent border-0" id="courseDescriptionArea"
                                                 style=" width: inherit;">
 
-                                                <div class="card bg-transparent border-0">
-                                                    <div class="card-body p-1 px-3 courseDescription" id="descriptionId"
-                                                        style="height: 60px; overflow-y: auto; overflow-x:hidden;">
-                                                        <h3 id="courseDetails" class="pt-1 m-0 courseDetailsSection"
+                                                <div class="card m-auto bg-transparent border-0"
+                                                    style="overflow-x: auto; scrollbar-width: thin;">
+                                                    <div class="card-body p-1 courseDescription" id="descriptionId"
+                                                        style="height: 120px; overflow-y: auto; overflow-x: auto;">
+
+                                                        <h1
+                                                            style="color : rgb(1 1 16); font-size: 24px; font-weight: 700; line-height: normal; ">
+                                                            প্যাকেজ সম্পর্কে
+                                                        </h1>
+
+                                                        <h3 id="courseDetails" class="pt-1 m-auto courseDetailsSection"
                                                             style="font-size: 16px;">
                                                             {{DESCRIPTION}}
                                                         </h3>
+
+
                                                         <div class="row pt-2 pb-1">
-                                                            <div class="col-lg-6 col-md-12 col-sm-12 py-2">
+                                                            <div class="col-lg-4 col-md-5 col-sm-10 py-2 m-auto">
                                                                 <div class="card"
                                                                     style="background-color: #fff; border-radius: 4px;">
                                                                     <div class="card-body p-2">
@@ -83,7 +98,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-lg-6 col-md-12 col-sm-12 py-2">
+                                                            <div class="col-lg-4 col-md-5 col-sm-10 py-2 m-auto">
                                                                 <div class="card"
                                                                     style="background-color: #fff; border-radius: 4px;">
                                                                     <div class="card-body p-2">
@@ -163,8 +178,6 @@
                                                                         margin: 0px;
                                                                     }
 
-
-
                                                                     button.demoClass1 {
                                                                         background-color: inherit;
                                                                         border-style: hidden;
@@ -184,10 +197,185 @@
                                                             </div>
                                                         </div>
                                                     </div>
+
+
+                                                    <style>
+                                                        /* #mainDescription{
+                                                    width: 1050px;
+                                                    overflow-x: auto;
+                                                    scroll-behavior: thin;
+                                                } */
+
+
+                                                        .courseDetailsSection {
+                                                            margin: 10px auto !important;
+                                                            width: 90% !important;
+                                                            overflow-x: auto !important;
+                                                            scrollbar-width: thin !important;
+                                                        }
+
+                                                        .courseDescription {
+                                                            width: inherit;
+                                                            overflow-x: auto;
+                                                            scrollbar-width: thin;
+                                                            margin: 10px auto !important;
+                                                        }
+
+                                                        @media (max-width: 990px) {
+                                                            .courseDescription {
+                                                                width: 768px;
+                                                                overflow-x: auto;
+                                                                scrollbar-width: thin;
+                                                            }
+                                                        }
+
+                                                        @media (max-width: 768px) {
+                                                            .courseDescription {
+                                                                width: 600px;
+                                                                overflow-x: auto;
+                                                                scrollbar-width: thin;
+                                                            }
+                                                        }
+
+                                                        @media (max-width: 600px) {
+                                                            .courseDescription {
+                                                                width: 500px;
+                                                                overflow-x: auto;
+                                                                scrollbar-width: thin;
+                                                            }
+                                                        }
+
+
+                                                        @media (max-width: 450px) {
+                                                            .courseDescription {
+                                                                width: 320px;
+                                                                overflow-x: auto;
+                                                                scrollbar-width: thin;
+                                                            }
+                                                        }
+
+                                                        @media (max-width: 320px) {
+                                                            .courseDescription {
+                                                                width: 260px;
+                                                                overflow-x: auto;
+                                                                scrollbar-width: thin;
+                                                            }
+                                                        }
+                                                    </style>
                                                 </div>
 
 
                                                 <div class="card-body p-1 mt-2 border-0 mx-auto showDetailsButton">
+                                                    <button class="descriptionBtn mx-auto py-1 px-1"
+                                                        id="descriptionDetails" onclick="showMoreDescription()">সম্পূর্ণ
+                                                        দেখুন
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-arrow-down"
+                                                            viewBox="0 0 16 16">
+                                                            <path fill-rule="evenodd"
+                                                                d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
+                                                        </svg>
+                                                    </button>
+
+                                                    <style>
+                                                        /* button updated */
+                                        button.descriptionBtn {
+                                            border-radius: 4px;
+                                            padding: 3px 5px !important;
+                                            background-color: rgb(248 250 252);
+                                            color: rgb(15 23 42);
+                                            border-color: rgb(30 64 175);
+                                            font-size: 0.8rem;
+                                            font-weight: 400;
+                                            animation: bounce 1.6s infinite;
+                                        }
+
+                                        @keyframes bounce {
+
+                                            0%,
+                                            100% {
+                                                transform: translateY(-30%);
+                                                animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+                                            }
+
+                                            50% {
+                                                transform: translateY(0);
+                                                animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+                                            }
+                                        }
+                                                    </style>
+                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <!-- <div class="card my-2 py-2" id="mainDescription"
+                                        style=" border: 4px; height: 250px; overflow: scroll; scrollbar-width: thin ; box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;">
+
+                                        <h1
+                                            style="color : rgb(1 1 16); font-size: 24px; font-weight: 700; line-height: normal; ">
+                                            প্যাকেজ সম্পর্কে
+                                        </h1>
+                                        <div class="card-body p-0">
+
+                                            <div class="card bg-transparent border-0" id="courseDescriptionArea"
+                                                style=" width: inherit;">
+
+                                                <div class="card bg-transparent border-0">
+                                                    <div class="card-body p-1 courseDescription" id="descriptionId"
+                                                        style="height: 120px; overflow-y: auto; overflow-x:hidden;">
+                                                        <h3 id="courseDetails" class="pt-1 m-0 courseDetailsSection"
+                                                            style="font-size: 16px;">
+                                                            {{DESCRIPTION}}
+                                                        </h3>
+                                                        <div class="row pt-2 pb-1">
+                                                            <div class="col-lg-6 col-md-12 col-sm-12 py-2">
+                                                                <div class="card"
+                                                                    style="background-color: #fff; border-radius: 4px;">
+                                                                    <div class="card-body p-0 py-1"
+                                                                        style="line-height: normal !important;">
+                                                                        <span
+                                                                            style="font-size: 0.9rem; font-weight: 500; line-height: normal;">কিভাবে
+                                                                            একাডেমিক
+                                                                            চ্যাটজিপিটি ব্যবহার করবে তার একটি ডেমো ভিডিও
+                                                                            এই -
+                                                                            <a href="https://youtu.be/Aaqp0vZKTlo?si=tnVN6Mdi8xRKV2ze"
+                                                                                target="_blank">
+                                                                                লিংক
+                                                                            </a>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-12 col-sm-12 py-2">
+                                                                <div class="card"
+                                                                    style="background-color: #fff; border-radius: 4px;">
+                                                                    <div class="card-body p-0 py-1"
+                                                                        style="line-height: normal !important;">
+                                                                        <span style=" font-size: 0.9rem; font-weight:
+                                                                        500; line-height: normal;">কিভাবে
+                                                                            এমসিকিউ
+                                                                            প্র্যাক্টিস করবে তা দেখতে পারো এই -
+                                                                            <a href="https://youtu.be/9_Qv85bJ2wo?si=dkNcOIlfuqyLfcKP"
+                                                                                target="_blank">
+                                                                                ভিডিওতে
+                                                                            </a>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="card-body p-1 my-2 border-0 mx-auto showDetailsButton">
                                                     <button class="descriptionBtn mx-auto py-1 px-1"
                                                         id="descriptionDetails" onclick="showMoreDescription()">সম্পূর্ণ
                                                         দেখুন
@@ -262,12 +450,10 @@
                                             }
 
                                         }
-                                    </style>
+                                    </style> -->
                                 </div>
                             </div>
                         </div>
-
-
 
 
                         <!-- course Price & course poster section -->
@@ -341,18 +527,19 @@
                         vertical-align: middle !important;
                         text-transform: capitalize;
                         font-family: cursive;
-                        border-style: groove !important;
-                        padding: 4px !important;
-                        border-radius: 4px !important;
-                        background: #f9fafc !important;
-                        border-color: rgb(15 23 42) !important;
-                        color: rgb(15 23 42) !important;
+                        border-style: none !important;
+                        padding: 5px !important;
+                        border-radius: 50px !important;
+                        background: #fff !important;
+                        border-color: rgb(99 102 241) !important;
+                        color: rgb(99 102 241) !important;
+                        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
                     }
 
                     .packageCourseslist .column.third a:nth-child(3):hover {
-                        background: rgb(15 23 42) !important;
-                        border-color: rgb(15 23 42) !important;
-                        color: #f9fafc !important;
+                        opacity: 0.8;
+                        background: rgb(99 102 241) !important;
+                        color: #fff !important;
                     }
 
                     .packageCourses {
@@ -395,12 +582,11 @@
                         line-height: normal;
                         font-weight: 700;
                     }
-
                 </style>
 
 
             </div>
-            
+
 
             <!-- course review -->
             <div data-cat="205" class="is-section is-section-60" id="1692060009772">
@@ -693,17 +879,17 @@
             border-radius: 4px;
             padding: 10px 20px !important;
             background-color: rgb(248 250 252);
-            color: rgb(15 23 42);
-            border-color: rgb(30 64 175);
+            color: rgb(59 130 246);
             font-size: 1rem;
             font-weight: 500;
+            border-style: none !important;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
         }
 
         button.descriptionBtn:hover {
             border-radius: 4px;
-            background-color: rgb(15 23 42);
+            background-color: rgb(59 130 246);
             color: #fff;
-            border-color: rgb(15 23 42);
             font-size: 1rem;
         }
 
@@ -760,8 +946,8 @@
         /* package course width and height set */
         #packageContents #courseslist a img {
             margin-bottom: 0;
-            width: 100%;
-            height: 200px;
+            width: 100% !important;
+            height: 220px !important;
             border-radius: 4px !important;
             max-height: 100% !important;
         }
@@ -818,7 +1004,7 @@
         /* pricing section button updated */
         .pricing .cartBtns .btn.btn-primary {
 
-            width: 100%;
+            width: 50%;
             border-radius: 4px !important;
             padding: 14px 28px !important;
             font-size: 12pt !important;
@@ -892,7 +1078,7 @@
 
         /*updated need for for footer styles*/
         .bg-dark {
-            --bs-info-rgb: 50, 20, 50;
+            --bs-info-rgb: 129, 140, 248;
             --bs-bg-opacity: 1;
             background-color: rgba(var(--bs-info-rgb), var(--bs-bg-opacity)) !important;
         }
@@ -939,23 +1125,25 @@
             vertical-align: middle !important;
             text-transform: capitalize;
             font-family: cursive;
-            border-style: groove !important;
-            padding: 4px !important;
-            border-radius: 4px !important;
-            background: #f9fafc !important;
-            border-color: rgb(15 23 42) !important;
-            color: rgb(15 23 42) !important;
+            border-style: none !important;
+            padding: 5px !important;
+            border-radius: 50px !important;
+            background: #fff !important;
+            border-color: rgb(99 102 241) !important;
+            color: rgb(99 102 241) !important;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
         }
 
         .packageCourseslist .column.third a:nth-child(3):hover {
-            background: rgb(15 23 42) !important;
-            border-color: rgb(15 23 42) !important;
-            color: #f9fafc !important;
+            opacity: 0.8;
+            background: rgb(99 102 241) !important;
+            color: #fff !important;
         }
 
+
         .packageCourses {
-            background: rgb(15 23 42);
-            border-radius: 4px !important;
+            background: rgb(30 27 75) !important;
+            border-radius: 5px !important;
         }
 
         .packageCourses h1 {
@@ -1009,6 +1197,18 @@
 
         #curriculumTitle {
             display: none !important;
+        }
+
+        .whatsapp-widget-container {
+            right: 10px !important;
+        }
+
+
+        @media (max-width:600px) {
+            .whatsapp-widget-container {
+                right: 10px !important;
+                bottom: 105px !important;
+            }
         }
     </style>
 

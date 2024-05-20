@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{Title}}</title>
+    <link href=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <style>
+        #singleCourseId {
+            padding: 1px 0px !important;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function showMoreDescription() {
+            let parentSectionId = document.getElementById('mainDescription');
+            let doc = document.getElementById('descriptionId');
+            let btn = document.getElementById('descriptionDetails');
+
+
+            if (doc.style.height === "300px") {
+                parentSectionId.style.height = "100%";
+                doc.style.height = "100%";
+                doc.style.overflowY = "scroll";
+                doc.style.overflowX = "scroll";
+                btn.style.display = "none";
+                //                 if (doc.style.minHeight !== "5px") {
+
+                //                 }
+                //                 if (doc.style.minHeight >= "5px") {
+                //                     btn.style.display = "visible";
+                //                     btn.innerHTML = `Show Less
+                //             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                // <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                // </svg>
+                //             `;
+                //                 }
+
+                //             }
+                //             else {
+                //                 btn.style.display = "visible";
+                //                 doc.style.height = "0px"
+                //                 doc.style.overflow = "hidden";
+                //                 btn.innerHTML = `Show Details
+                //             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                // <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                // </svg>
+                //             `;
+                //             
+            }
+        }
+    </script>
+</head>
+
+
+
+
+<body>
+    <div data-cat="52" class="is-section is-box is-section-20" id="homePageBackground">
+        <div id="1692065886326d" data-cat="1" class="bodySection is-section is-section-100">
+            <div data-cat="52" class="is-section is-box" id="1692060009769">
+                <div class="is-container container" id="singleCourseId" style="margin-top: 0px; margin-bottom: 0px;">
+
+
+                    <div class="row mainSection">
+                        <div class="col-lg-8 col-md-6 col-sm-12">
+                            <div class="card my-2 border-0 bg-transparent"
+                                style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+                                <h2 id="courseTitle" class="pt-1 m-0">
+                                    {{TITLE}}
+                                </h2>
+                            </div>
+
+                            <!-- course promo video -->
+                            <div class="card border-0 bg-transparent">
+                                <div class="card-body p-0 m-auto promoVideoSection"
+                                    style="height: 340px;
+                             padding: 5px !important; box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; border-radius: 4px !important;">
+                                    <iframe width="100%" height="100%" poster="images/machine.jpg"
+                                        src="https://www.youtube.com/embed/BWXqmVw8foA?"
+                                        title="YouTube video player"></iframe>
+
+
+
+                                    <!-- <iframe width="420" height="345"
+                                        src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+                                    </iframe> -->
+                                </div>
+
+                                <style>
+                                    @media (min-width: 1024px) {
+                                        .promoVideoSection {
+                                            width: 560px;
+                                        }
+                                    }
+
+
+                                    @media (min-width:601px) and (max-width: 1023px) {
+                                        .promoVideoSection {
+                                            width: 100%;
+                                            height: 100%;
+                                        }
+                                    }
+
+
+                                    @media (max-width: 600px) {
+                                        .promoVideoSection {
+                                            width: 100%;
+                                            height: 100%;
+                                        }
+                                    }
+                                </style>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-12 card border-0 p-1 pb-1 h-100 courseImageShow">
+
+                            <!-- pricing section -->
+                            <div class="card-body p-0"
+                                style=" border-radius: 5px;box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+
+                                <!-- course poster & cover photo section image -->
+                                <img id="courseImage" class="card-img-top" src="/resources/images/cc1.jpg"
+                                    alt="courseImage">
+
+
+                                <div class="pt-1 m-auto coursePricing">
+                                    {{PRICING}}
+                                </div>
+
+
+                                <div class="card-body p-1" id="courseTagline">
+                                    <p class="m-0 p-0 mt-1" style="color:rgb(0 21 138) ;">
+                                        {{TAGLINE}}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- description with course syllabus -->
+                    <div class="card bg-transparent border-0 my-3 mx-0"
+                        style="border-radius: 5px; box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;">
+                        <div class="card-body p-0">
+
+                            <!-- Course Description -->
+                            <h1 id="curriculumTitle"
+                                style="text-align: center; color : rgb(1 1 16); font-size: 24px; font-weight: 700; line-height: normal; ">
+                                কোর্স সম্পর্কে
+                            </h1>
+
+                            <!-- Course Description -->
+
+                            <div class="card my-2 py-2" id="mainDescription"
+                                style=" border: 4px; height: 450px; overflow: scroll; scrollbar-width: thin ; box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;">
+                                <div class="card-body p-0">
+
+                                    <div class="card bg-transparent border-0" id="courseDescriptionArea"
+                                        style=" width: inherit;">
+
+                                        <div class="card m-auto bg-transparent border-0"
+                                            style="overflow-x: auto; scrollbar-width: thin;">
+                                            <div class="card-body p-1 courseDescription" id="descriptionId"
+                                                style="height: 300px; overflow-y: auto; overflow-x: auto;">
+                                                <h3 id="courseDetails" class="pt-1 m-auto courseDetailsSection"
+                                                    style="font-size: 16px;">
+                                                    {{DESCRIPTION}}
+                                                </h3>
+
+
+                                                <div class="card" style="border-radius: 50px;">
+                                                    <div class="card-body p-0 py-1 m-auto">
+                                                        <p
+                                                            style="color: #090f2a; margin: auto; font-size: 8pt; font-weight: 400; line-height: normal;">
+                                                            সম্পূর্ণ কনটেন্ট দেখতে প্যাকেজ টি এনরোল করুন</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row pt-2 pb-1">
+                                                    <div class="col-lg-4 col-md-5 col-sm-10 py-2 m-auto">
+                                                        <div class="card"
+                                                            style="background-color: #fff; border-radius: 4px;">
+                                                            <div class="card-body p-0 py-1"
+                                                                style="line-height: normal !important;">
+                                                                <span
+                                                                    style="font-size: 8pt; font-weight: 400; line-height: normal !important;">কিভাবে
+                                                                    একাডেমিক
+                                                                    চ্যাটজিপিটি ব্যবহার করবে তার একটি ডেমো ভিডিও
+                                                                    এই -
+                                                                    <a href="https://youtu.be/Aaqp0vZKTlo?si=tnVN6Mdi8xRKV2ze"
+                                                                        target="_blank">
+                                                                        লিংক
+                                                                    </a>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-5 col-sm-10 py-2 m-auto">
+                                                        <div class="card"
+                                                            style="background-color: #fff; border-radius: 4px;">
+                                                            <div class="card-body p-0 py-1"
+                                                                style="line-height: normal !important;">
+                                                                <span
+                                                                    style=" font-size: 8pt; font-weight: 400; line-height: normal !important;">কিভাবে
+                                                                    এমসিকিউ
+                                                                    প্র্যাক্টিস করবে তা দেখতে পারো এই -
+                                                                    <a href="https://youtu.be/9_Qv85bJ2wo?si=dkNcOIlfuqyLfcKP"
+                                                                        target="_blank">
+                                                                        ভিডিওতে
+                                                                    </a>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <style>
+                                                /* #mainDescription{
+                                            width: 1050px;
+                                            overflow-x: auto;
+                                            scroll-behavior: thin;
+                                        } */
+
+
+                                                .courseDetailsSection {
+                                                    margin: 10px auto !important;
+                                                    width: 100% !important;
+                                                    overflow-x: auto !important;
+                                                    scrollbar-width: thin !important;
+                                                }
+
+                                                .courseDescription {
+                                                    width: inherit;
+                                                    overflow-x: auto;
+                                                    scrollbar-width: thin;
+                                                    margin: 10px auto !important;
+                                                }
+
+                                                @media (max-width: 990px) {
+                                                    .courseDescription {
+                                                        width: 768px;
+                                                        overflow-x: auto;
+                                                        scrollbar-width: thin;
+                                                    }
+                                                }
+
+                                                @media (max-width: 768px) {
+                                                    .courseDescription {
+                                                        width: 600px;
+                                                        overflow-x: auto;
+                                                        scrollbar-width: thin;
+                                                    }
+                                                }
+
+                                                @media (max-width: 600px) {
+                                                    .courseDescription {
+                                                        width: 500px;
+                                                        overflow-x: auto;
+                                                        scrollbar-width: thin;
+                                                    }
+                                                }
+
+
+                                                @media (max-width: 500px) {
+                                                    .courseDescription {
+                                                        width: 450px;
+                                                        overflow-x: auto;
+                                                        scrollbar-width: thin;
+                                                    }
+                                                }
+
+                                                @media (max-width: 450px) {
+                                                    .courseDescription {
+                                                        width: 390px;
+                                                        overflow-x: auto;
+                                                        scrollbar-width: thin;
+                                                    }
+                                                }
+
+                                                @media (max-width: 400px) {
+                                                    .courseDescription {
+                                                        width: 340px;
+                                                        overflow-x: auto;
+                                                        scrollbar-width: thin;
+                                                    }
+                                                }
+
+                                                @media (max-width: 350px) {
+                                                    .courseDescription {
+                                                        width: 290px;
+                                                        overflow-x: auto;
+                                                        scrollbar-width: thin;
+                                                    }
+                                                }
+
+                                                @media (max-width: 300px) {
+                                                    .courseDescription {
+                                                        width: 240px;
+                                                        overflow-x: auto;
+                                                        scrollbar-width: thin;
+                                                    }
+                                                }
+
+                                                @media (max-width: 250px) {
+                                                    .courseDescription {
+                                                        width: 190px;
+                                                        overflow-x: auto;
+                                                        scrollbar-width: thin;
+                                                    }
+                                                }
+                                            </style>
+                                        </div>
+
+
+                                        <div class="card-body p-1 mt-2 border-0 mx-auto showDetailsButton">
+                                            <button class="descriptionBtn mx-auto py-1 px-1" id="descriptionDetails"
+                                                onclick="showMoreDescription()">সম্পূর্ণ
+                                                দেখুন
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
+                                                </svg>
+                                            </button>
+                                            <style>
+                                                @media (max-width:600px) {
+                                                    .descriptionBtn {
+                                                        display: none;
+                                                    }
+
+                                                    .courseDescription {
+                                                        height: 100% !important;
+                                                    }
+
+                                                    #mainDescription {
+                                                        height: 100% !important;
+                                                    }
+                                                }
+                                            </style>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- course Syllabus -->
+                    <div id="1692065261158d" data-cat="204" class="is-section is-section-100 is-box">
+                        <div class="is-container container" style="max-width: 1100px; margin-top: 10px; margin-bottom: 0px;
+            background-color: rgb(15 23 42);
+border-radius: 4px; ">
+                            <div class="card bg-transparent border-0">
+                                <div class="card-body p-0">
+                                    <div class="row my-1">
+                                        <div class="col" id="ratingHeading">
+                                            <h1 id="curriculumTitle"
+                                                style="color : rgb(243 244 246); font-size: 24px; font-weight: 700; line-height: normal;  text-align: center;">
+                                                স্টাডি প্ল্যান</h1>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="spacer height-10"></div>
+                                        </div>
+                                    </div>
+                                    <div class="is-overlay-content sp-content spCourseCurriculum"
+                                        data-type="coursecurr-4" data-module-desc="Course Curriculum"
+                                        data-dialog-width="1200px" data-dialog-height="600px" data-html="OM2pIaJ"
+                                        data-settings="%5B%7B%20%22id%22%3A%20%22%22%7D%5D">
+                                        <div id="Ain1ilf" style="text-align: center;">Course Curriculum will be
+                                            displayed here.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- course review -->
+                    <div data-cat="205" class="container is-section is-section-60 my-2" id="1692060009772"
+                        style="max-width: 1100px;">
+                        <div class="is-container container"
+                            style="height: 100%; overflow-y: auto; max-width: 1100px; margin-top: 0px; margin-bottom: 0px;">
+                            <div class="row" id="ratingHeading">
+                                <div class="col">
+                                    <h1
+                                        style="color: #000000; text-align: center; font-size: 24px; font-weight: 700; line-height: normal;  letter-spacing: 0px;">
+                                        যারা ফিডব্যাক দিয়েছে </h1>
+                                </div>
+                            </div>
+
+                            <div class="sp-content spCustomWidget" data-type="feedback-2"
+                                data-module-desc="Custom Widget" data-dialog-width="1200px" data-dialog-height="600px"
+                                data-html="KuctqK0" data-settings="%5B%7B%20%22id%22%3A%20%22%22%7D%5D">fqTT9rJ</div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <style>
+        body *:not([class*=icon], [class*=fa]) {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .is-wrapper #courseImage {
+            border-radius: 4px;
+            margin: 0;
+        }
+
+        .is-wrapper .is-dark-text * {
+            color: rgb(1 1 16);
+        }
+
+
+        /* .landingSection img {
+            border-radius: 4px;
+        } */
+
+
+
+        /* user review styles */
+
+        .is-box#createCustomReview {
+            background-color: #f5f5f500;
+        }
+
+        .is-box#createCustomReview .textarea-cont {
+            background-color: rgb(15 23 42);
+            border-radius: 4px !important;
+        }
+
+        .is-box#createCustomReview .textarea-cont #reviewText {
+            color: #fff;
+        }
+
+
+        .createCustomReviewBtn {
+            padding: 14px 28px !important;
+            font-size: 12pt !important;
+            font-weight: 600 !important;
+            border-radius: 4px !important;
+        }
+
+
+        .accordion-syllabus-header {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 0.2em;
+            background: #fcfbfb;
+            box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+            border-radius: 4px;
+            padding: 1rem;
+            position: relative;
+        }
+
+        /* @media (max-width:601px) {
+            .landingSection {
+                flex-direction: column-reverse;
+            }
+        } */
+
+        #courseDetails p {
+            margin: 0px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 8pt !important;
+            text-align: start;
+            font-weight: 400 !important;
+            line-height: normal !important;
+            color: rgb(1 1 16);
+        }
+
+
+        .courseDetailsSection table tbody tr {
+            padding: 5px;
+            margin: 0px;
+            line-height: normal;
+        }
+
+        .courseDetailsSection table {
+            width: 100%;
+        }
+
+
+
+        .courseDetailsSection table tbody tr td {
+            padding: 2px 0px !important;
+            margin: auto !important;
+            font-size: 8pt !important;
+            font-weight: 400 !important;
+            line-height: normal !important;
+            color: rgb(1 1 16);
+            border-style: solid;
+            border-width: 1px;
+            border-color: rgb(2, 42, 82);
+            text-align: center !important;
+            text-transform: capitalize !important;
+        }
+
+
+        #courseDescriptionArea button {
+            font-size: 0.9rem;
+            line-height: normal;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+
+        .courseDetailsSection table tbody tr:first-child {
+            background-color: rgb(96 165 250);
+            font-size: 8pt !important;
+            font-weight: 400 !important;
+            line-height: normal !important;
+            text-align: start;
+            vertical-align: middle;
+        }
+
+        .courseDetailsSection table tbody tr:nth-child(1) td {
+            color: #fff !important;
+        }
+
+        #courseDescriptionArea {
+            overflow-x: auto;
+        }
+
+        /* course description scroll behabiour when mobile screen size to show all elements perfectly */
+        /* @media (max-width:425px) {
+            #courseDescriptionArea {
+                width: 100%;
+                max-width: 280px;
+                margin: auto;
+            }
+        } */
+
+
+
+        h2#courseTitle {
+            font-size: 32px !important;
+            font-weight: 600 !important;
+            letter-spacing: normal !important;
+            color: rgb(10, 9, 89) !important;
+            line-height: normal !important;
+            text-align: left !important;
+        }
+
+        /* instructor_image_styles */
+        .customImageOutlayer {
+            height: 70px !important;
+            width: 70px !important;
+            border-radius: 50%;
+            position: relative;
+            flex-shrink: 0;
+            overflow: hidden;
+            align-items: center;
+            margin: 5px;
+        }
+
+
+
+        /*course curriculam custom extra css */
+
+        .accordion-content {
+            border-radius: 0px 0px 4px 4px !important;
+        }
+
+
+        .coursecurr4 .accordian-list__item {
+            list-style-type: none;
+            border-bottom: 1px solid rgba(93, 24, 146, 0.471);
+            padding: 8px 8px;
+        }
+
+        .coursecurr4 .accordian-list {
+            list-style: none;
+            margin: 0px 0px;
+            padding-left: 0rem;
+            margin: 0rem;
+        }
+
+        .coursecurr4 .accordian-content-card__title {
+            font-weight: 500;
+            font-size: 10pt;
+            vertical-align: middle;
+            line-height: normal !important;
+            margin: auto !important;
+            color: #090f2a !important;
+        }
+
+        .accordian-content-block {
+            padding: 0rem 0rem;
+        }
+
+        .coursecurr4 .accordion-syllabus-header span {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: normal !important;
+            margin: auto 0px !important;
+            margin-right: 10px !important;
+        }
+
+        .coursecurr4 .accordian-content-card__ico {
+            width: 24px;
+            height: 24px;
+            margin: auto 0px !important;
+            margin-right: 5px !important;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        .coursecurr4 .accordion-syllabus-header__title p {
+            font-weight: 700 !important;
+            line-height: normal !important;
+        }
+
+        .accordion-syllabus-header {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 0.2em;
+            background: #fcfbfb;
+            box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+            border-radius: 4px;
+            padding: 10px;
+            position: relative;
+        }
+
+        .coursecurr4 .accordian-content-card__link a {
+            font-weight: 400;
+            font-size: 10pt;
+            line-height: normal;
+            text-decoration: none;
+            border-style: hidden;
+            font-size: 14px;
+            padding: 8px 24px;
+            border-radius: 50px;
+            background: #090f2a !important;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+            animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: .5;
+            }
+        }
+
+
+        .coursecurr4 .accordian-content-card__link a:hover {
+            font-weight: 400;
+            font-size: 10pt;
+            line-height: normal;
+            text-decoration: none;
+            border-style: hidden;
+            font-size: 14px;
+            padding: 8px 24px;
+            border-radius: 50px;
+            background: #dddfe4;
+        }
+
+        .accordian-content-card__link {
+            display: contents;
+        }
+
+
+        .accordian-content-card__link a span {
+            font-size: 8pt;
+            font-weight: 400 !important;
+            margin: auto !important;
+            line-height: normal;
+            vertical-align: middle;
+            text-decoration: none;
+            margin: 0px;
+            padding: 0px;
+            color: #fff !important;
+        }
+
+
+
+        /* upadated to show promo code */
+        .toast:not(.show) {
+            display: inline-flex;
+        }
+
+
+
+        .imageSection {
+            height: 60px;
+            width: 60px;
+            flex-shrink: 0;
+        }
+
+
+
+        /* tagline update */
+
+
+        #courseTagline p {
+            margin: 0px;
+            padding: 0px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: normal;
+            color: rgb(1 1 16);
+        }
+
+        #courseTagline ul {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #courseTagline ul li {
+            margin: 0px;
+            padding: 0px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: normal;
+            color: rgb(1 1 16);
+        }
+
+
+        /* list styles */
+
+        #courseTagline ul li {
+            list-style-type: disclosure-closed;
+            padding-left: 1px;
+            padding: 5px;
+        }
+
+        ::marker {
+            color: #2196F3;
+        }
+
+
+        /* li {
+            list-style-type: "✓";
+            padding-left: 1px;
+        }
+
+        ::marker {
+            color: crimson;
+        } */
+
+
+        /* button updated */
+        button.descriptionBtn {
+            margin: 10px auto !important;
+            border-radius: 4px;
+            padding: 10px 20px !important;
+            background-color: rgb(248 250 252);
+            color: rgb(14 165 233) !important;
+            border-style: none !important;
+            font-size: 16px !important;
+            font-weight: 500;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+            animation: bounce 1.6s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(-30%);
+                animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+            }
+
+            50% {
+                transform: translateY(0);
+                animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+            }
+        }
+
+
+        button.descriptionBtn:hover {
+            background-color: rgb(14 165 233) !important;
+            color: #fff !important;
+            opacity: 0.8 !important;
+        }
+
+
+
+        #homePageBackground {
+            background-color: rgb(255 255 255);
+            background-image: url(https://res.cloudinary.com/pioneer-alpha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1699467090/Sigmoid%20School%28Website%29/Course%20Background%20Image/new_edited_Sigmoid_School-Course_Background-01_1_xkwgtj.jpg?_s=public-apps);
+            background-position: inherit;
+            background-attachment: inherit;
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 100%;
+        }
+
+
+
+
+
+
+        /* benefitSectionStyles */
+        .benefitFromCourse .imageSection {
+            height: 60px;
+            width: 60px;
+        }
+
+        .benefitFromCourse .imageSection img {
+            flex-shrink: 0;
+            margin: 0px;
+        }
+
+        .benefitFromCourse ul li {
+            color: rgb(1 1 16);
+            font-size: 16px;
+            font-weight: 500;
+            line-height: normal;
+            list-style-type: disclosure-open;
+            padding-left: 1px;
+            padding: 0px;
+            margin: 0px;
+        }
+
+
+
+        /* course pricing section updated */
+        .pricing .cartBtns .btn.btn-primary {
+            border-radius: 4px;
+            width: 100%;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+
+        .coursePricing .pricing div {
+            display: block !important;
+            margin-bottom: 5px !important;
+            margin-top: 5px !important;
+        }
+
+
+        /* coursePricing */
+        /* .coursePricing {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            z-index: 99;
+            height: 60px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 4px !important;
+            padding: 5px 5px;
+            background-color: rgb(224 242 254);
+        } */
+
+
+        .pricing .cartBtns .btn.btn-primary {
+            border-radius: 4px !important;
+            width: 90% !important;
+            padding: 15px 0px !important;
+            background-color: rgb(23 37 84);
+            margin: 10px auto !important;
+            color: #fff !important;
+        }
+
+        .pricing .cartBtns .btn.btn-primary:hover {
+            opacity: 0.8;
+        }
+
+        .coursePricing .pricing div {
+            margin: auto !important;
+            margin-bottom: -5px !important;
+        }
+
+
+        @media (max-width: 768px) {
+
+            /* .coursePriceMainSection {
+                height: 100px;
+            } */
+
+            .pricing .cartBtns .btn.btn-primary {
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                border-radius: 50px !important;
+                padding: 12px 0px !important;
+            }
+
+            .bodySection {
+                position: relative;
+            }
+
+            .coursePricing .pricing div {
+                margin: 0px auto !important;
+            }
+
+            .coursePricing {
+                margin: 0px !important;
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                z-index: 99;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                border-radius: 5px !important;
+                background-color: #fff !important;
+            }
+
+            .coursePricing .cartBtns {
+                width: 100%;
+            }
+
+            .is-container {
+                z-index: initial;
+            }
+        }
+
+
+
+        /*updated need for for footer styles*/
+        .bg-dark {
+            --bs-info-rgb: 15, 23, 42;
+            --bs-bg-opacity: 1;
+            background-color: rgba(var(--bs-info-rgb), var(--bs-bg-opacity)) !important;
+        }
+
+        footer .socialIcons {
+            text-align: right;
+        }
+
+        @media (max-width:768px) {
+            footer .socialIcons {
+                text-align: center;
+            }
+        }
+
+
+        p,
+        li {
+            margin: 0px !important;
+        }
+
+        .whatsapp-widget-container {
+            right: 10px !important;
+        }
+
+
+        @media (max-width:600px) {
+            .whatsapp-widget-container {
+                right: 10px !important;
+                bottom: 105px !important;
+            }
+        }
+    </style>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
