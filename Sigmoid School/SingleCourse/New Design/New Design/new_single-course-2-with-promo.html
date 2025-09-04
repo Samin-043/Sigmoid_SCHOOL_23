@@ -11,10 +11,17 @@
         #singleCourseId {
             padding: 0px 0px !important;
         }
+
+        .courseDescription ul {
+            padding: 0px;
+            margin: 1px;
+        }
+
+        .courseDescription ul li {
+            padding: 0px;
+            margin: 1px;
+        }
     </style>
-
-
-
 </head>
 
 
@@ -28,58 +35,96 @@
 
 
                     <div class="row mainSection">
+                        <div class="col-lg-8 col-md-12 col-sm-12">
+
+                            <!-- promo video -->
+                            <div class="card-body p-1 m-auto promoVideoSection"
+                                style=" border-radius: 4px; box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;">
+                                <iframe width="100%" height="100%"
+                                    src="https://www.youtube.com/embed/Bi31Y1BerpQ"></iframe>
+
+                                <style>
+                                    #subTitle {
+                                        font-size: 24px;
+                                        font-weight: 700;
+                                        line-height: normal;
+                                    }
+
+                                    @media (min-width: 1401px) {
+                                        .promoVideoSection {
+                                            width: 100%;
+                                            height: 470px;
+                                        }
+                                    }
+
+                                    @media (min-width: 1201px) and (max-width:1400px) {
+                                        .promoVideoSection {
+                                            width: 100%;
+                                            height: 450px;
+                                        }
+                                    }
+
+                                    @media (min-width: 993px) and (max-width: 1200px) {
+                                        .promoVideoSection {
+                                            width: 100%;
+                                            height: 410px;
+                                        }
+                                    }
+
+                                    @media (min-width:501px) and (max-width: 992px) {
+                                        .promoVideoSection {
+                                            height: 400px;
+                                            width: 100%;
+                                        }
+                                    }
+
+
+                                    @media (max-width: 500px) {
+                                        .promoVideoSection {
+                                            height: 280px;
+                                            width: 100%;
+                                        }
+                                    }
+
+                                    @media (max-width: 375px) {
+                                        .promoVideoSection {
+                                            height: 210px;
+                                            width: 100%;
+                                        }
+                                    }
+                                </style>
+                            </div>
+                        </div>
+
+
 
                         <div class="col-lg-4 col-md-12 col-sm-12 card border-0 p-1 pb-1 h-100 courseImageShow">
-
                             <!-- pricing section -->
-                            <div class="card-body px-2 py-0"
-                                style=" border-radius: 5px;box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+                            <div class="card-body p-1"
+                                style=" border-radius: 10px;box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
 
                                 <!-- course poster & cover photo section image -->
                                 <img id="courseImage" class="card-img-top img-fluid" src="/resources/images/cc1.jpg"
                                     alt="courseImage">
 
+
+                                <h2 id="courseTitle">
+                                    {{TITLE}}
+                                </h2>
+
+                                <div class="card border-0 bg-transparent p-0" id="courseTagline">
+                                    <p class="m-0 p-0 mt-1" style="color:rgb(0 21 138)">
+                                        {{TAGLINE}}
+                                    </p>
+                                </div>
+
+                                <p class="mt-1">
+
+                                </p>
+
                                 <div class="pt-1 m-auto coursePricing">
                                     {{PRICING}}
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-8 col-md-12 col-sm-12">
-                            <h2 id="courseTitle" class="p-1">
-                                {{TITLE}}
-                            </h2>
-
-                            <!-- <div class="card-body">
-                                <p
-                                    style="font-size: 18px !important; margin: 15px auto !important; text-align: center !important; line-height: normal !important;">
-                                    👉<strong style="color:#2196F3;">বইটি 📖</strong> সংগ্রহ করতে ক্লিক করুন এখানে -
-                                    <a href="https://forms.gle/npX7ubKr2gQJd1af7" target="_blank"
-                                        style="text-decoration: none;">
-                                        লিংক👈
-                                    </a>
-                                </p>
-                            </div> -->
-
-
-                            <div class="card-body">
-                                <p
-                                    style="font-size: 18px !important; margin: 15px auto !important; text-align: center !important; line-height: normal !important;">
-                                    👉<strong style="color:#2196F3;">মেডিকেল বইটি📖</strong> সংগ্রহ করতে ক্লিক করুন
-                                    এখানে -
-                                    <a href="https://www.rokomari.com/book/437047/medical-dental-afmc-suggestion-and-model-test"
-                                        target="_blank" style="text-decoration: none;">
-                                        লিংক👈
-                                    </a>
-                                </p>
-                            </div>
-
-
-
-                            <div class="card-body" id="courseTagline" style="padding: 10px !important;">
-                                <p class="m-0 p-1 mt-1" style="color:rgb(0 21 138);">
-                                    {{TAGLINE}}
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -734,6 +779,7 @@ border-radius: 4px; ">
             padding: 0px;
             margin: 0px;
         }
+
 
 
 
